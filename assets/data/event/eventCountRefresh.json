@@ -1,0 +1,14 @@
+{
+  "safeeventinfo": {
+    "allSafeEvent": 0,
+    "highestPeriod": "---",
+    "noReadSafeEvent": 0,
+    "todaySafeEvent": 0
+  },
+  "syseventinfo": {
+    "allSafeEvent": 6,
+    "highestPeriod": "16:00 - 17:00",
+    "noReadSafeEvent": 6,
+    "todaySafeEvent": 0
+  }
+}

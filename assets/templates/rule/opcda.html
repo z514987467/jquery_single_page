@@ -1,0 +1,63 @@
+<div class="eventinfo_box">
+    <div class="tabsafeev">
+        <div class="tabtitle">
+            <ul>
+                <li class="hit">OPC-DA</li>
+            </ul>
+        </div>
+        <div class="tabmian">
+            <div class="tabmiantxt" style="display:block;">
+                <form id="$elementId$_formDatetime">
+                    <div class="h1">OPC-DA协议读写操作控制</div>
+                    <div class="dediv highlight">
+                        <label>写入开关: </label>
+                        <input type="radio" name="$elementId$_writeSwitch" value="1" checked="checked"
+                               class="dxinput"
+                               id="$elementId$_writeSwitch1" data-id="$elementId$_writeSwitch1"/><label
+                            for="$elementId$_writeSwitch1"></label>开启
+                        <input type="radio" name="$elementId$_writeSwitch" value="0" class="dxinput"
+                               id="$elementId$_writeSwitch2" data-id="$elementId$_writeSwitch2"/><label
+                            for="$elementId$_writeSwitch2" style="margin-left:36px"></label>关闭
+                    </div>
+                    <div class="dediv highlight">
+                        <label>写入事件处理: </label>
+                        <div class="rule-single-select single-select">
+                            <select id="$elementId$_writeEventStatus" data-id="$elementId$_writeEventStatus">
+                                <option value="1">通过</option>
+                                <option value="2">警告</option>
+                                <option value="3">丢弃</option>
+                                <option value="4">阻断</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="dediv highlight">
+                        <label>读取开关: </label>
+                        <input type="radio" name="$elementId$_readSwitch" value="1" checked="checked"
+                               class="dxinput"
+                               id="$elementId$_readSwitch1" data-id="$elementId$_readSwitch1"/><label
+                            for="$elementId$_readSwitch1"></label>开启
+                        <input type="radio" name="$elementId$_readSwitch" value="0" class="dxinput"
+                               id="$elementId$_readSwitch2" data-id="$elementId$_readSwitch2"/><label
+                            for="$elementId$_readSwitch2" style="margin-left:36px"></label>关闭
+                    </div>
+                    <div class="dediv highlight">
+                        <label>读取事件处理: </label>
+                        <div class="rule-single-select single-select">
+                            <select id="$elementId$_readEventStatus" data-id="$elementId$_readEventStatus">
+                                <option value="1">通过</option>
+                                <option value="2">警告</option>
+                                <option value="3">丢弃</option>
+                                <option value="4">阻断</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="dediv">
+                        <button class="buttonde float_right" id="$elementId$_btnOpcdaSetting"
+                                data-id="$elementId$_btnOpcdaSetting" type="button">设置
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

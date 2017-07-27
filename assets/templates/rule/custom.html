@@ -1,0 +1,45 @@
+﻿<div class="eventinfo_box">
+    <div class="tabsafeev">
+        <div class="tabtitle">
+            <ul>
+                <li class="hit">自定义协议</li>
+            </ul>
+        </div>
+        <div class="tabmian">
+            <div class="tabmiantxt" style="display:block;">
+                <!--协议配置文件-->
+                <div class="dediv">
+                    <form method="post" id="$elementId$_formUpload" enctype="multipart/form-data">
+                        <label>协议配置文件：</label>
+                        <label for="$elementId$_fileUpload" class="roll_but but_browse" id="$elementId$_btnUpload"
+                               data-id="$elementId$_btnUpload">浏览</label>
+                        <input type="file" name="$elementId$_fileUpload" id="$elementId$_fileUpload"
+                               data-id="$elementId$_fileUpload"
+                               style="position:absolute;width:1px;z-index:-999;filter:alpha(opacity=10);-moz-opacity:0.01;-khtml-opacity: 0.01; opacity: 0.01; "/>
+                        <small class="dic" id="$elementId$_errUpload" data-id="$elementId$_errUpload">选择上传文件</small>
+                        <button id="$elementId$_btnImport" data-id="$elementId$_btnImport" style="margin-left:10px;"
+                                class="roll_but but_upload">导入
+                        </button>
+                        <button type="button" id="$elementId$_btnExport" data-id="$elementId$_btnExport"
+                                class="roll_but export">导出
+                        </button>
+                    </form>
+                </div>
+                <!--协议列表-->
+                <div class="dediv">
+                    <div class="tabel_div">
+                        <table data-id="$elementId$_tdCustomRuleList" id="$elementId$_tdCustomRuleList">
+
+                        </table>
+                        <div class="allevent">
+                            已启用: <span style="color:#ff8761;" data-id="$elementId$_lblTotalCustomRules"
+                                       id="$elementId$_lblTotalCustomRules"> 0</span>条
+                        </div>
+                    </div>
+                    <div class="evpage" data-id="$elementId$_pagerContent" id="$elementId$_pagerContent">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

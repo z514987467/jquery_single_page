@@ -1,0 +1,27 @@
+﻿<div class="tabdiv">
+    <button class="butchange refresh" data-id="$elementId$_btnRefresh" id="$elementId$_btnRefresh">刷新</button>
+    <button class="butchange yread" data-id="$elementId$_btnSetRead" id="$elementId$_btnSetRead">全部标记为已读</button>
+    <button class="butchange empty" data-id="$elementId$_btnClear" id="$elementId$_btnClear">清空所有事件</button>
+    <button class="butchange export" data-id="$elementId$_btnExport" id="$elementId$_btnExport">导出数据</button>
+    <button class="but butip" data-id="$elementId$_btnFilter" id="$elementId$_btnFilter">过滤条件</button>
+    
+</div>
+<div class="filtrate" style="display:none;" data-id="$elementId$_divFilter" id="$elementId$_divFilter">
+    <div class="tabdiv">
+        <label>开始时间: </label>
+        <input type="text" class="Wdate" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" data-id="$elementId$_txtStartDateTime" id="$elementId$_txtStartDateTime" />
+        <label>结束时间: </label>
+        <input type="text" class="Wdate" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" data-id="$elementId$_txtEndDateTime" id="$elementId$_txtEndDateTime" />
+		<label>内容: </label>
+		<input style="margin-left:0px;" type="text" data-id="$elementId$_txtEventContent" id="$elementId$_txtEventContent" class="inputip" >
+    </div>
+    <div class="tabdiv">
+        <button class="but butser" data-id="$elementId$_btnSearch" id="$elementId$_btnSearch">搜索</button>
+    </div>
+</div>
+<div class="tabel_div">
+    <table data-id="$elementId$_tdEventList" id="$elementId$_tdEventList"></table>
+    <div class="allevent">总共 <span style="color:#ff8761;" data-id="$elementId$_lblTotalEvent" id="$elementId$_lblTotalEvent"> 0</span> 个事件</div>
+</div>
+<div class="evpage" data-id="$elementId$_pagerContent" id="$elementId$_pagerContent">
+</div>

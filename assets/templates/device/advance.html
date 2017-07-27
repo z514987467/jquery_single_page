@@ -1,0 +1,114 @@
+﻿<!--设备管理  begin-->
+<div class="device_box">
+    <div class="h1">系统重置</div>
+    <div class="dediv">
+        <button class="buttonsys restart" id="$elementId$_btnRebootDevice" data-id="$elementId$_btnRebootDevice">重启设备
+        </button>
+        <button class="buttonsys reduction" id="$elementId$_btnResetDevice" data-id="$elementId$_btnResetDevice">
+            恢复出厂设置
+        </button>
+    </div>
+    <hr/>
+    <div class="h1">远程登录设置</div>
+    <div class="dediv">
+        <label>远程登录IP控制: </label>
+        <input type="radio" name="$elementId$_rabRemoteIP" value="1" checked="checked" class="dxinput"
+               id="$elementId$_rabRemoteIP1" data-id="$elementId$_rabRemoteIP1"/><label
+            for="$elementId$_rabRemoteIP1"></label>开启
+        <input type="radio" name="$elementId$_rabRemoteIP" value="0" class="dxinput" id="$elementId$_rabRemoteIP2"
+               data-id="$elementId$_rabRemoteIP2"/><label for="$elementId$_rabRemoteIP2"
+                                                          style="margin-left:36px"></label>关闭
+    </div>
+    <div id="$elementId$_divRemoteIP" data-id="$elementId$_divRemoteIP">
+        <div class="tabdiv" style="margin-top:20px;">
+            <label>IP: </label>
+            <input type="text" style="width:410px;" class="inputip" data-id="$elementId$_txtRemoteIP"
+                   id="$elementId$_txtRemoteIP"
+                   placeholder="(格式：192.168.2.1,192.168.1.10-192.168.1.100,192.168.0.0/16)"/>
+            <button class="button_add" style="margin:0px 18px 0px 0px;" data-id="$elementId$_btnAddRemoteIP"
+                    id="$elementId$_btnAddRemoteIP">确认
+            </button>
+        </div>
+        <div class="ipformat">*请输入IP地址或者IP地址范围或者IP地址掩码，以逗号分隔</div>
+    </div>
+    <hr/>
+    <div class="h1">Syslog远程服务设置</div>
+    <div class="dediv highlight">
+        <label>Syslog远程服务: </label>
+        <input type="radio" name="$elementId$_rabSyslogRemote" value="1" checked="checked" class="dxinput"
+               id="$elementId$_rabSyslogRemote1" data-id="$elementId$_rabSyslogRemote1"/><label
+            for="$elementId$_rabSyslogRemote1"></label>开启
+        <input type="radio" name="$elementId$_rabSyslogRemote" value="0" class="dxinput"
+               id="$elementId$_rabSyslogRemote2" data-id="$elementId$_rabSyslogRemote2"/><label
+            for="$elementId$_rabSyslogRemote2" style="margin-left:36px"></label>关闭
+        <button class="button_cut button_blue" style="margin:0px 0px 0px 30px;" id="$elementId$_btnSyslogRemoteChange">
+            确定
+        </button>
+    </div>
+    <div id="$elementId$_divSyslogRemote">
+        <form id="$elementId$_formSyslogRemote" class="dediv highlight">
+            <label>远程Syslog服务器IP: </label>
+            <input type="text" class="inputde" id="$elementId$_txtSyslogRemoteIP"
+                   data-id="$elementId$_txtSyslogRemoteIP" datatype="ip" errormsg="必须入输入有效的IP"
+                   placeholder="(格式：192.168.1.1)" title="格式：192.168.1.1"/>
+            <label>协议: </label>
+            <div class="rule-single-select" style="width:130px;">
+                <select type="text" data-id="$elementId$_ddlSyslogRemoteProtocol"
+                        id="$elementId$_ddlSyslogRemoteProtocol">
+                    <option value="TCP">TCP</option>
+                    <option value="UDP">UDP</option>
+                </select>
+            </div>
+            <label>端口: </label>
+            <input type="text" class="inputde" id="$elementId$_txtSyslogRemotePort"
+                   data-id="$elementId$_txtSyslogRemotePort" datatype="port" errormsg="必须入输入有效的端口（0到65535的整数）"
+                   placeholder="(格式：80)" title="格式：80"/>
+            <span class="Validform_checktip">必须输入有效的IP、协议、端口</span>
+			<div class="dediv">
+            <button class="button_add button_blue float_right" style="margin:10px 0px 0px 30px;" data-id="$elementId$_btnAddSyslogRemote"
+                    id="$elementId$_btnAddSyslogRemote">添加
+            </button>
+			</div>
+        </form>
+        <div class="tabel_div highlight">
+            <table data-id="$elementId$_tdSyslogRemoteList" id="$elementId$_tdSyslogRemoteList">
+            </table>
+        </div>
+    </div>
+	<hr/>
+    <div class="h1">运行模式切换</div>
+    <div class="dediv highlight">
+        <label>运行模式: </label>
+        <input type="radio" name="$elementId$_runMode" value="0" checked="checked" class="dxinput"
+               id="$elementId$_routeMode" data-id="$elementId$_routeMode"/><label
+            for="$elementId$_routeMode"></label>路由保护模式
+        <input type="radio" name="$elementId$_runMode" value="1" class="dxinput"
+               id="$elementId$_transparentMode" data-id="$elementId$_transparentMode"/><label
+            for="$elementId$_transparentMode" style="margin-left:36px"></label>智能保护模式
+        <button class="button_cut button_blue" style="margin:0px 0px 0px 30px;" id="$elementId$_btnRunMode">
+            确定
+        </button>
+    </div>
+	<hr/>
+    <div class="h1">管理模式切换</div>
+    <div class="dediv">
+        <input type="radio" name="$elementId$_rabMode" value="0" class="dxinput" id="$elementId$_rabMode2"
+               data-id="$elementId$_rabMode2"/><label for="$elementId$_rabMode2"></label>集中管理
+        <input type="radio" name="$elementId$_rabMode" value="1" checked="checked" class="dxinput"
+               id="$elementId$_rabMode1" data-id="$elementId$_rabMode1"/><label for="$elementId$_rabMode1"
+                                                                                style="margin-left:40px;"></label>自管理
+        <button class="button_cut button_blue" style="margin:0px 0px 0px 30px;" data-id="$elementId$_btnMode"
+                id="$elementId$_btnMode">确认
+        </button>
+    </div>
+    <div class="dediv" id="$elementId$_divMode" data-id="$elementId$_divMode">
+        <!--<input type="radio" name="$elementId$_rabSelfMode" value="1" checked="checked" class="dxinput"-->
+               <!--id="$elementId$_rabSelfMode1" data-id="$elementId$_rabSelfMode1"/><label style="margin-left:35px;"-->
+                                                                                        <!--for="$elementId$_rabSelfMode1"></label>自动发现安全监管平台-->
+        <input type="radio" name="$elementId$_rabSelfMode" value="0" checked="checked" class="dxinput" id="$elementId$_rabSelfMode2"
+               data-id="$elementId$_rabSelfMode2"/><label for="$elementId$_rabSelfMode2"></label>
+        手工配置安全监管平台<input type="text" style="margin-left:10px;" class="inputde" data-id="$elementId$_txtModeIP"
+                         id="$elementId$_txtModeIP"/>
+    </div>
+</div>
+<!--设备管理  end-->

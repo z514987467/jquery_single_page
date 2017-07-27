@@ -1,0 +1,61 @@
+﻿<!--设备管理  begin-->
+<div class="device_box">
+    <div class="h1">设备信息</div>
+    <ul class="dv_txt">
+        <li>设备型号: <span id="$elementId$_lblDeviceTypeNo" data-id="$elementId$_lblDeviceTypeNo"></span></li>
+        <li>序列号: <span id="$elementId$_lblDeviceSerialNo" data-id="$elementId$_lblDeviceSerialNo"></span></li>
+        <li>设备版本: <span id="$elementId$_lblDeviceVersion" data-id="$elementId$_lblDeviceVersion"></span></li>
+    </ul>
+    <hr>
+    <form id="$elementId$_formIP">
+        <div class="h1">IP设置</div>
+        <p>当前IP: <span id="$elementId$_lblDeviceIP" data-id="$elementId$_lblDeviceIP"></span></p>
+        <div class="dediv highlight" data-step="3" data-intro="Another step.">
+            <label>IP: </label><input type="text" class="inputde" id="$elementId$_txtDeviceNewIP" data-id="$elementId$_txtDeviceNewIP" datatype="ip" errormsg="必须输入有效的IP" placeholder="(格式：192.168.1.1)" title="格式：192.168.1.1" />
+            <label>子网掩码: </label><input type="text" class="inputde" id="$elementId$_txtDeviceNewSubnet" data-id="$elementId$_txtDeviceNewSubnet" datatype="subnet" errormsg="必须输入有效的子网掩码,且不能为0.0.0.0" placeholder="(格式：255.255.255.0)" title="格式：255.255.255.0" />
+            <label>网关: </label><input type="text" class="inputde" id="$elementId$_txtDeviceNewGateway" data-id="$elementId$_txtDeviceNewGateway" datatype="ip" errormsg="必须输入有效的网关" placeholder="(格式：192.168.1.1)" title="格式：192.168.1.1" />
+            <span class="Validform_checktip">必须输入有效的IP、子网掩码、网关</span>
+        </div>
+        <div class="dediv"><button class="buttonde float_right" id="$elementId$_btnIPSetting" data-id="$elementId$_btnIPSetting" type="submit">设置</button></div>
+        <hr>
+    </form>
+    <form id="$elementId$_formDatetime">
+        <div class="h1">时间设置</div>
+        <div class="dediv highlight">
+            <input type="radio" name="$elementId$_rabDeviceDateTime" class="dxinput" id="$elementId$_rabDeviceDateTime1" data-id="$elementId$_rabDeviceDateTime1" value="1" checked="checked" /><label for="$elementId$_rabDeviceDateTime1"></label>
+            <label>手工输入: </label><input type="text" class="Wdate" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" id="$elementId$_txtDeviceDateTime3" data-id="$elementId$_txtDeviceDateTime3">
+        </div>
+        <div class="dediv">
+            <input type="radio" name="$elementId$_rabDeviceDateTime" class="dxinput" id="$elementId$_rabDeviceDateTime2" data-id="$elementId$_rabDeviceDateTime2" value="2" /><label for="$elementId$_rabDeviceDateTime2" style=" margin-left: 19px;"></label>
+            <label>NTP自动同步: </label><input type="text" class="inputde" id="$elementId$_txtDeviceDateTime4" data-id="$elementId$_txtDeviceDateTime4" datatype="ip" errormsg="必须输入有效的IP" disabled="disabled" title="服务器地址,如:192.168.1.1" placeholder="(服务器地址,如:192.168.1.1)" />
+            <span class="Validform_checktip">必须输入有效的IP</span>
+        </div>
+        <div class="dediv"><button class="buttonde float_right" id="$elementId$_btnDateTimeSetting" data-id="$elementId$_btnDateTimeSetting" type="submit">设置</button></div>
+        <hr>
+    </form>
+    <form id="$elementId$_formLogin">
+        <div class="h1">登录安全设置</div>
+        <div class="dediv" style="height:80px;">
+            <ul class="dv_box">
+                <li><label class="dev-box-title">系统强制登出时间:</label> <input type="text" class="inputmin" maxlength="3" id="$elementId$_txtDeviceLogoutDateTime" data-id="$elementId$_txtDeviceLogoutDateTime">分钟
+				<small class="Validform_checktip"></small></li>
+                <li><label class="dev-box-title">可尝试登录次数:</label> <input type="text" class="inputmin" maxlength="2" id="$elementId$_txtDeviceLogintTimes" data-id="$elementId$_txtDeviceLogintTimes">次
+				<small class="Validform_checktip"></small></li>
+            </ul>
+            
+        </div>
+        <div class="dediv"><button class="buttonde float_right" id="$elementId$_btnLoginSetting" data-id="$elementId$_btnLoginSetting">设置</button></div>
+        <hr>
+    </form>
+    <div class="h1">系统升级</div>
+    <div class="dediv">
+        <form action="" method="post" id="$elementId$_formUpload" enctype="multipart/form-data">
+            <label>升级包文件：</label>                
+            <label for="$elementId$_fileUpload" class="roll_but but_browse" id="$elementId$_btnUpload" data-id="$elementId$_btnUpload">浏览</label>
+            <input type="file" name="$elementId$_fileUpload" id="$elementId$_fileUpload" data-id="$elementId$_fileUpload" style="position:absolute;width:1px;z-index:-999;filter:alpha(opacity=10);-moz-opacity:0.01;-khtml-opacity: 0.01; opacity: 0.01; " />
+            <small class="dic" id="$elementId$_errUpload" data-id="$elementId$_errUpload">选择上传文件</small>
+        </form>
+    </div>
+    <div class="dediv"><button class="buttonsys upgrade" id="$elementId$_btnUpgrade" data-id="$elementId$_btnUpgrade">开始升级</button></div>
+</div>
+<!--设备管理  end-->

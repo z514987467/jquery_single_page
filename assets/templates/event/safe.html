@@ -1,0 +1,54 @@
+﻿<div class="tabdiv">
+    <button class="butchange refresh" data-id="$elementId$_btnRefresh" id="$elementId$_btnRefresh">刷新</button>
+    <button class="butchange yread" data-id="$elementId$_btnSetRead" id="$elementId$_btnSetRead">全部标记为已读</button>
+    <button class="butchange empty" data-id="$elementId$_btnClear" id="$elementId$_btnClear">清空所有事件</button>
+    <button class="butchange export" data-id="$elementId$_btnExport" id="$elementId$_btnExport">导出数据</button>
+    <button class="but butip" data-id="$elementId$_btnFilter" id="$elementId$_btnFilter">过滤条件</button>
+</div>
+<div class="filtrate" style="display:none;" data-id="$elementId$_divFilter" id="$elementId$_divFilter">
+    <div class="tabdiv">
+        <label>源地址: </label><input type="text" class="inputip" data-id="$elementId$_txtSourceIP" id="$elementId$_txtSourceIP" />
+        <label>目的地址: </label><input type="text" class="inputip" data-id="$elementId$_txtDestinationIP" id="$elementId$_txtDestinationIP" />
+        <label>协议: </label><input type="text" class="inputip" data-id="$elementId$_txtProtocol" id="$elementId$_txtProtocol" />
+    </div>
+    <div class="tabdiv">
+        <label>开始时间: </label>
+        <input type="text" class="Wdate" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" data-id="$elementId$_txtStartDateTime" id="$elementId$_txtStartDateTime" />
+        <label>结束时间: </label>
+        <input type="text" class="Wdate" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" data-id="$elementId$_txtEndDateTime" id="$elementId$_txtEndDateTime" />
+       
+     </div>
+  
+       <div class="tabdiv">
+        <div class="select-all float_left roll_but" style="width:302px;">
+        <label>事件等级:</label>
+		<div class="rule-single-select">
+            <select class="select-note" data-id="$elementId$_txthierarchy" id="$elementId$_txthierarchy">
+                <option value="">---请选择---</option>
+                <option value="1">警告</option>
+                <option value="3">阻断</option>
+                <option value="2">丢弃</option>
+            </select>
+        </div>
+		 </div>
+		<div class="select-all float_left roll_but">
+        <label>状态:</label> 
+			<div class="rule-single-select">
+            <select class="select-note" data-id="$elementId$_txtstatus" id="$elementId$_txtstatus">
+                <option value="">---请选择---</option>                
+                <option value="1">已读</option>
+                <option value="0">未读</option>
+            </select>
+			</div>
+		</div>
+         <button class="but butser" data-id="$elementId$_btnSearch" id="$elementId$_btnSearch">搜索</button>  
+    </div>
+
+</div>
+<div class="tabel_div">
+    <table data-id="$elementId$_tdEventList" id="$elementId$_tdEventList">
+    </table>
+    <div class="allevent">总共 <span style="color:#ff8761;" data-id="$elementId$_lblTotalEvent" id="$elementId$_lblTotalEvent"> 0</span> 个事件</div>
+</div>
+<div class="evpage" data-id="$elementId$_pagerContent" id="$elementId$_pagerContent">
+</div>

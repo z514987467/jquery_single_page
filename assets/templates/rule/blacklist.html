@@ -1,0 +1,73 @@
+﻿<!--事件信息  begin-->
+<div class="eventinfo_box">
+    <div class="tabsafeev">
+        <div class="tabtitle">
+            <ul>
+                <li class="hit" data-id="$elementId$_blacklist">黑名单</li>
+            </ul>
+        </div>
+        <div class="tabmian">
+            <!--事件加载-->
+            <div class="tabmiantxt" style="display:block;" data-id="$elementId$_knowBlacklistHolder"
+                 id="$elementId$_knowBlacklistHolder">
+                <div class="tabdiv">
+                    <button class="roll_but but_off float_left" id="$elementId$_chkAll" data-id="$elementId$_chkAll"
+                            isChecked="true">
+                        全选
+                    </button>
+                    <button class="roll_but but_start float_left" id="$elementId$_btnEnable"
+                            data-id="$elementId$_btnEnable">部署
+                    </button>
+                    <form action="" method="post" id="$elementId$_formUpload" enctype="multipart/form-data">
+                        <input type="file" name="$elementId$_fileUpload" id="$elementId$_fileUpload"
+                               data-id="$elementId$_fileUpload"
+                               style="position:absolute;width:1px;filter:alpha(opacity=10);-moz-opacity:0.01;-khtml-opacity: 0.01; opacity: 0.01; "/>
+                        <label style="min-width:inherit;" for="$elementId$_fileUpload"
+                               class="roll_but but_upload float_left" id="$elementId$_btnUpload"
+                               data-id="$elementId$_btnUpload">导入</label>
+                    </form>
+					<button class="roll_but but_disable float_right" id="$elementId$_empty" data-id="$elementId$_empty">清空已部署规则</button>
+                    <button class="roll_but but_refresh float_left" data-id="$elementId$_btnRefresh"
+                            id="$elementId$_btnRefresh">刷新
+                    </button>
+                    <div class="select-all float_left roll_but">
+                        操作全部：
+                        <div class="rule-single-select">
+                            <select id="$elementId$_dllEventAll" class="select-note ">
+                                <option value="">---请选择---</option>
+                                <option value="0">设为全部通过</option>
+                                <option value="1">设为全部警告</option>
+                                <option value="2">设为全部丢弃</option>
+                                <option value="3">设为全部阻断</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabdiv">
+                    <span class="float_right margin_right20">
+                        过滤：
+                        <div class="rule-single-select">
+                            <select id="$elementId$_ddlFilter" data-id="$elementId$_ddlFilter">
+                                <option value="">全部</option>
+                                <option value="0">未启用</option>
+                                <option value="1">启用</option>
+                            </select>
+                        </div>
+                    </span>
+                </div>
+                <div class="tabel_div">
+                    <table data-id="$elementId$_tdBlacklistList" id="$elementId$_tdBlacklistList"></table>
+                    <div class="allevent">
+                        已部署规则数/总规则数：
+                        <span style="color:#ff8761;" id="$elementId$_lblTotalBlacklist1">0</span>
+                        <span style="color:#ff8761;">/</span>
+                        <span style="color:#ff8761;" id="$elementId$_lblTotalBlacklist2">0</span>
+                    </div>
+                </div>
+                <div class="evpage" data-id="$elementId$_pagerContent" id="$elementId$_pagerContent">
+                </div>
+            </div>
+            <!--事件加载-->
+        </div>
+    </div>
+</div>

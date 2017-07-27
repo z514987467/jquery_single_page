@@ -1,0 +1,42 @@
+﻿<!--事件信息  begin-->
+<div class="eventinfo_box">
+    <div class="evboxlist">
+        <div class="evbox">
+            <div class="evbox_logo evtoday"></div>
+            <span class="evtitle">今日安全事件</span>
+            <p class="evnumber evnumber_refresh" data-id="$elementId$_todayEvent" id="$elementId$_todayEvent">0</p>
+        </div>
+        <div class="evbox">
+            <div class="evbox_logo evnoready"></div>
+            <span class="evtitle">未读安全事件</span>
+            <p class="evnumber evnumber_refresh" data-id="$elementId$_noReadyEvent" id="$elementId$_noReadyEvent">0</p>
+        </div>
+        <div class="evbox">
+            <div class="evbox_logo evpeaktime"></div>
+            <span class="evtitle">安全事件高峰时段</span>
+            <p class="evnumber evnumber_font" data-id="$elementId$_highPeriod" id="$elementId$_highPeriod">00:00-00:00</p>
+        </div>
+        <div class="evbox">
+            <div class="evbox_logo evsafe"></div>
+            <span class="evtitle"  data-id="$elementId$_lblEventTitle" id="$elementId$_lblEventTitle">历史安全事件</span>
+            <p class="evnumber" data-id="$elementId$_lblEventCount" id="$elementId$_lblEventCount">0</p>
+        </div>
+    </div>
+
+    <div class="tabsafeev">
+        <div class="tabtitle">
+            <ul>
+                <li class="hit" data-id="$elementId$_totalSafeEvent">安全事件 (<span class="evnumber" id="$elementId$_totalSafeEvent">0</span>)</li>
+                <li data-id="$elementId$_totalSystemEvent">系统事件 (<span class="evnumber" id="$elementId$_totalSystemEvent">0</span>)</li>
+            </ul>
+        </div>
+        <div class="tabmian">
+            <!--事件加载-->
+            <div class="tabmiantxt" data-id="$elementId$_safeEventHolder" id="$elementId$_safeEventHolder">
+            </div>
+            <div class="tabmiantxt" style="display:none;" data-id="$elementId$_systemEventHolder" id="$elementId$_systemEventHolder">
+            </div>
+            <!--事件加载-->
+        </div>
+    </div>
+</div>

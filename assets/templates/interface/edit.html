@@ -1,0 +1,96 @@
+<!--用户管理  begin-->
+<div class="interface_box">
+    <form id="$elementId$_port">
+        <div class="h1">端口信息</div>
+        <div class="dediv">
+            <button style="visibility: hidden;display: none" class="button button_blue button_cancel float_right"
+                    id="$elementId$_btnPortEditCancel" type="button">取消
+            </button>
+            <button style="visibility: hidden;display: none" class="button button_blue button_sure float_right"
+                    id="$elementId$_btnPortEditSure" type="button">确认
+            </button>
+            <button class="button button_blue button_edit float_right" id="$elementId$_btnPortEditStart" type="button">编辑</button>
+        </div>
+        <div class="socket">
+            <ul class="portbox">
+                <li><span><img id="$elementId$_imgRunLight" src="/images/portbox_green.png">RUN</span></li>
+                <li><span><img id="$elementId$_imgPowerLight" src="/images/portbox_red.png">POWER</span></li>
+                <li><span><img id="$elementId$_imgFindLight" src="/images/portbox_green.png">BYPASS</span></li>
+                <li><span><img id="$elementId$_imgAlarmLight" src="/images/portbox_gray.png">ALARM</span></li>
+            </ul>
+            <ul class="jackbox" id="$elementId$_divPortList">
+                <li>
+                    <span><p>CONSOLE</p><img src="/images/jackbox_no.png"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="portlist_box clearfl" id="$elementId$_divPortDetailList">
+            <!--<div class="portgl">
+                <h3>管理端口</h3>
+                <p>管理端口状态</p>
+                <p class="dkzt"><img src="static/images/con_ka6.jpg">端口连接正常</p>
+                <p class="dkzt"><img src="static/images/con_ka5.jpg">端口未连接</p>
+                <p>IP地址</p>
+                <p></p>
+            </div>
+            <div class="portgl">
+                <h3>通信端口P0</h3>
+                <p>状态</p>
+                <p class="dkzt"><img src="static/images/con_ka6.jpg">端口连接正常</p>
+                <p class="dkzt"><img src="static/images/con_ka5.jpg">端口未连接</p>
+                <p class="ym"><label>IP地址</label><input type="text"/></p>
+                <p class="ym"><label>掩码</label><input type="text"></p>
+            </div>-->
+        </div>
+        <!--myport end-->
+    </form>
+    <hr>
+    <div id="$elementId$_route">
+        <div class="h1">静态路由信息</div>
+        <div class="dediv highlight">
+            <label>目的网段：</label>
+            <input type="text" class="inputde" id="$elementId$_txtRouteIpStart" data-id="$elementId$_txtRouteIpStart"
+                   style="margin-right: 0"
+                   datatype="ip" errormsg="必须入输入有效的IP" placeholder="(格式：192.168.1.1)" title="格式：192.168.1.1">
+            <b class="xg">/</b>
+            <input type="text" class="inputde" id="$elementId$_txtRouteIpEnd" data-id="$elementId$_txtRouteIpEnd"
+                   datatype="ip" errormsg="必须入输入有效的IP" placeholder="(格式：24)" title="格式：24">
+        </div>
+        <div class="dediv highlight">
+            <label>路由指向：</label>
+            <input type="radio" name="$elementId$_rabRouteDirect" value="output_interface" checked="checked" class="dxinput"
+                   id="$elementId$_rabRouteDirect1" data-id="$elementId$_rabRouteDirect1"/><label
+                for="$elementId$_rabRouteDirect1"></label>
+            <label>出接口</label>
+            <div class="rule-single-select" style="width: 120px">
+                <select type="text" data-id="$elementId$_ddlRouteOutInterface"
+                        id="$elementId$_ddlRouteOutInterface">
+                </select>
+            </div>
+            <input type="radio" name="$elementId$_rabRouteDirect" value="next_hop" class="dxinput"
+                   id="$elementId$_rabRouteDirect2" data-id="$elementId$_rabRouteDirect2"/><label
+                for="$elementId$_rabRouteDirect2" style="margin-left:36px"></label>
+            <label>下一跳</label>
+            <input type="text" class="inputde" id="$elementId$_txtRouteNextHop" disabled="disabled"
+                   data-id="$elementId$_txtRouteNext" datatype="ip" errormsg="必须入输入有效的IP"
+                   title="(格式：192.168.1.1)" placeholder="(格式：192.168.1.1)">
+            <button style="margin-left:127px;" id="$elementId$_btnAddRoute" class="button button_add float_right" type="button">新增路由
+            </button>
+        </div>
+        <hr>
+        <div class="dediv highlight">
+            <button class="button button_blue button_cancel float_right" id="$elementId$_btnDeleteRoutes" type="button">批量删除
+            </button>
+        </div>
+        <div class="tabel_div">
+            <table data-id="$elementId$_tdRoutelist" id="$elementId$_tdRoutelist"></table>
+            <div class="allevent">
+                静态路由个数 <span style="color:#ff8761;" data-id="$elementId$_lblTotalRouteList"
+                         id="$elementId$_lblTotalRouteList"> 0</span>
+            </div>
+        </div>
+        <div class="evpage" data-id="$elementId$_pagerContent" id="$elementId$_pagerContent">
+        </div>
+    </div>
+</div>
+<!--用户管理  end-->

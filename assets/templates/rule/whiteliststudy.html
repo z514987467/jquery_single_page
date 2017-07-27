@@ -1,0 +1,34 @@
+﻿<!--学习设置-->
+<div class="dediv">
+    <label class="float_left">开始时间: </label>
+    <div class="float_left">
+        <input type="text" class="Wdate" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:00'})" data-id="$elementId$_txtStartDateTime" id="$elementId$_txtStartDateTime" />
+    </div>
+    <label class="float_left">学习时长: </label>
+    <div class="float_left s_time" data-id="$elementId$_divSlider" id="$elementId$_divSlider">
+        <div class="slider bg-purple ui-widget-header s_progress" style="width:250px;"></div>
+        <div class="slider-value s_font" style="text-align:center;">
+            <span class="slider-value" data-id="$elementId$_txtStudyDur" id="$elementId$_txtStudyDur">0</span>小时
+        </div>
+    </div>
+    <div class="float_left" data-id="$elementId$_divProgressbar" id="$elementId$_divProgressbar">
+        <div id="progressbar" style="width:400px; margin-top:5px;"><div class="progress-label"></div></div>
+    </div>
+    <button data-id="$elementId$_btnStudy" id="$elementId$_btnStudy" class="button_blue but_beginstudy float_left " style="margin-left:12px; margin-top:4px;">停止学习</button>
+    <div class="float_right study_state">规则总数：<span style="color:#26c544;" data-id="$elementId$_lblStudyRuleCount" id="$elementId$_lblStudyRuleCount">0</span>条</div>
+</div>
+<hr />
+<div class="dediv">
+    <button data-id="$elementId$_btnEnableAll" id="$elementId$_btnEnableAll" class="roll_but but_all float_left">启用所有规则</button>
+    <button data-id="$elementId$_btnDisableAll" id="$elementId$_btnDisableAll" class="roll_but but_derule float_left">删除所有规则</button>
+    <button data-id="$elementId$_btnEnable" id="$elementId$_btnEnable" class="roll_but but_start float_left">启用</button>
+    <button data-id="$elementId$_btnDisable" id="$elementId$_btnDisable" class="roll_but but_empty float_left">删除</button>
+</div>
+<div class="rulebase">
+    <div class="tabel_div">
+        <table data-id="$elementId$_tdWhitelistList" id="$elementId$_tdWhitelistList"></table>
+    </div>
+    <div class="evpage" data-id="$elementId$_pagerContent" id="$elementId$_pagerContent">
+    </div>     
+</div>
+<!--学习设置-->       

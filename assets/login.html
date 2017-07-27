@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能保护平台 - 登录</title>
+    <link rel="stylesheet" type="text/css" href="/css/index.css"/>
+</head>
+<body>
+<div class="login_bg">
+    <div class="login_box">
+        <div class="login_logo"></div>
+        <div class="loginbox">
+            <div class="log_text"></div>
+            <div class="inputbox">
+                <input type="text" id="login_txtUserName" data-id="login_txtUserName"/>
+                <i class="cion-log-user"></i>
+                <input type="password" class="margin_top15" id="login_txtUserPassword" data-id="login_txtUserPassword"/>
+                <i class="cion-log-password"></i>
+            </div>
+            <button class="log_but" id="login_btnLogin" data-id="login_btnLogin">登录平台</button>
+            <i class="log_bubg"></i>
+        </div>
+    </div>
+    <div class="login_bottom">
+        <div class="login_copyright">
+            <i class="cion-copyright"></i><br/>
+            版权所有 2013 - 2016 匡恩网络保留所有权利 智能工业网络安全专家
+        </div>
+        <div class="float_right login_font">
+            结构安全&nbsp&nbsp/&nbsp&nbsp本体安全&nbsp&nbsp/&nbsp&nbsp行为安全&nbsp&nbsp/&nbsp&nbsp基因安全
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/scripts/libraries/3rdparty/jquery.min.js"></script>
+<script src="scripts/libraries/3rdparty/crypto-js.min.js"></script>
+<script type="text/javascript" src="/scripts/libraries/global/FormatterManager.js"></script>
+<script type="text/javascript" src="/scripts/libraries/global/AppConfig.js"></script>
+<script async type="text/javascript" src="/scripts/libraries/global/URLManager.js"></script>
+<script type="text/javascript" src="/scripts/libraries/3rdparty/layer/layer_local.js"></script>
+<script async type="text/javascript" src="/scripts/libraries/global/LocalStorageManager.js"></script>
+<script type="text/javascript" src="/scripts/login.js"></script>
+<script type="text/javascript">
+    $(function () {
+        getImage();
+        $("button").on("click", function () {
+            initializeLoginScreen();
+        });
+        $(document).on("keydown", function (e) {
+            if (e.keyCode == 13) {
+                $("#login_btnLogin").click();
+            }
+        });
+    });
+</script>
+</body>
+</html>

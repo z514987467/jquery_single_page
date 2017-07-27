@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>智能保护平台</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <link rel="stylesheet" type="text/css" href="/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/validate.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/jquery-ui-1.10.3.custom.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/introjs.css"/>
+</head>
+<body style="display:none;visibility: hidden">
+<div id="guideContainer">
+</div>
+<!--新手指引-->
+<div class="guide" style="visibility:hidden;">
+    <div class="text">
+        <div class="guidetitle">如何使系统运转起来</div>
+        <p onclick="javascript: View.getInstance().init('DEVICE_LIST', '设备管理')">步骤1：设备管理设置IP</p>
+        <p onclick="javascript: View.getInstance().init('RULE_WHITELIST', '白名单')">步骤2：白名单学习设置</p>
+        <br>
+        <p><a href='javascript:void(0);'>进入新手引导</a></p>
+    </div>
+    <div class="arrow"><i class="cion-arrow"></i></div>
+</div>
+<!--新手指引-->
+
+<!--Top-->
+<div class="header">
+    <div class="logo">
+        <div class="cion-logo"></div>
+    </div>
+    <div class="systemtime">系统时间<p></p></div>
+    <div class="userinfor">
+        <div class="exitbox">
+            <button class="cion_exit"></button>
+        </div>
+        <div class="user_name">
+            <i class="cion-user-name"></i>
+            您好，<span id="main_lblUserName"></span></div>
+    </div>
+</div>
+<!--Top-->
+<div class="MainBox">
+    <!--导航开始-->
+    <div class="Nav">
+        <ul class="firstnav">
+            <li style="visibility:hidden;display:none;" class="firstnav"
+                onclick="javascript: View.getInstance().init('HOME_DASHBOARD', '系统状态')">
+                <h3><i class="cion-system"></i>系统状态</h3>
+            </li>
+            <li style="visibility:hidden;display:none;" class="firstnav"
+                onclick="javascript: View.getInstance().init('EVENT_LIST', '事件信息')">
+                <h3><i class="cion-event"></i>事件信息</h3>
+            </li>
+            <li style="visibility:hidden;display:none;" class="firstnav"
+                onclick="javascript: View.getInstance().init('LOG_LIST', '日志信息')">
+                <h3><i class="cion-log"></i>日志信息</h3>
+            </li>
+            <li style="visibility:hidden;display:none;" class="firstnav">
+                <h3><i class="cion-rule"></i>规则管理
+                    <div class="up"></div>
+                </h3>
+                <div class="secondnav">
+                    <ul>
+                        <li onclick="javascript: View.getInstance().init('RULE_WHITELIST', '白名单')"><a
+                                href="javascript:void(0);"><span class="navname">白名单</span></a></li>
+                        <li onclick="javascript: View.getInstance().init('RULE_BLACKLIST', '黑名单')"><a
+                                href="javascript:void(0);"><span class="navname">黑名单</span></a></li>
+                        <li onclick="javascript: View.getInstance().init('RULE_MAC', 'IP/MAC')"><a
+                                href="javascript:void(0);"><span class="navname">IP/MAC</span></a></li>
+                        <li onclick="javascript: View.getInstance().init('RULE_CUSTOM', '自定义协议')"><a
+                                href="javascript:void(0);"><span class="navname">自定义协议</span></a></li>
+                        <li onclick="javascript: View.getInstance().init('RULE_OPCDA', 'OPC-DA')"><a
+                                href="javascript:void(0);"><span class="navname">OPC-DA</span></a></li>
+                    </ul>
+                </div>
+            </li>
+            <!-- <li style="visibility:hidden;display:none;" class="firstnav"> -->
+                <!-- <h3><i class="cion-audit"></i>安全审计 -->
+                    <!-- <div class="up"></div> -->
+                <!-- </h3> -->
+                <!-- <div class="secondnav"> -->
+                    <!-- <ul> -->
+                        <!-- <li onclick="javascript: View.getInstance().init('PROTOCOL_LIST', '协议审计')"><a -->
+                                <!-- href="javascript:void(0);"><span class="navname">协议审计</span></a></li> -->
+                        <!-- <li onclick="javascript: View.getInstance().init('FLOW_LIST', '流量审计')"><a -->
+                                <!-- href="javascript:void(0);"><span class="navname">流量审计</span></a></li> -->
+                    <!-- </ul> -->
+                <!-- </div> -->
+            <!-- </li> -->
+            <!-- <li style="visibility:hidden;display:none;display:none;" class="firstnav" -->
+                <!-- onclick="javascript: View.getInstance().init('NETTOPO_LIST', '网络拓扑')"> -->
+                <!-- <h3><i class="cion-nettopo"></i>网络拓扑</h3> -->
+            <!-- </li> -->
+            <li class="firstnav" onclick="javascript: View.getInstance().init('DEVICE_LIST', '设备管理')">
+                <h3><i class="cion-device"></i>设备管理</h3>
+            </li>
+            <li style="visibility:hidden;display:none;" class="firstnav"
+                onclick="javascript: View.getInstance().init('USER_EDIT', '用户管理')">
+                <h3><i class="cion-management"></i>用户管理</h3>
+            </li>
+            <li style="visibility:hidden;display:none;" class="firstnav" id="nav_interface_setting"
+                onclick="javascript: View.getInstance().init('INTERFACE_EDIT', '接口配置')">
+                <h3><i class="cion-user"></i>接口配置</h3>
+            </li>
+        </ul>
+    </div>
+
+    <!--导航结束-->
+    <div class="main_content" id="viewContainer">
+    </div>
+</div>
+<!--服务器上面使用下面library.js，注释上面
+<script tcype="text/javascript" src="/scripts/libraries/library.js"></script>-->
+<!--本地上面使用下面js，注释上面-->
+<script type="text/javascript" src="/scripts/libraries/3rdparty/jquery.min.js"></script>
+<script type="text/javascript" src="/scripts/libraries/3rdparty/jquery.form.min.js"></script>
+<script type="text/javascript" src="/scripts/libraries/3rdparty/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="/scripts/libraries/3rdparty/jquery.typetype.min.js"></script>
+<script type="text/javascript" src="/scripts/libraries/global/AppConfig.js"></script>
+<script type="text/javascript" src="/scripts/libraries/global/Constants.js"></script>
+<script type="text/javascript" src="/scripts/libraries/global/ScriptLoader.js"></script>
+<script type="text/javascript" src="/scripts/libraries/global/URLManager.js"></script>
+<script type="text/javascript" src="/scripts/libraries/global/LocalStorageManager.js"></script>
+<script type="text/javascript" src="/scripts/libraries/global/TemplateManager.js"></script>
+<script type="text/javascript" src="/scripts/libraries/global/AuthManager.js"></script>
+<script type="text/javascript" src="/scripts/libraries/global/CookieManager.js"></script>
+<script type="text/javascript" src="/scripts/libraries/global/ContentFactory.js"></script>
+<script type="text/javascript" src="/scripts/libraries/global/FormatterManager.js"></script>
+<script type="text/javascript" src="/scripts/libraries/global/Validation.js"></script>
+
+<script type="text/javascript" src="/scripts/libraries/3rdparty/echarts-all.js"></script>
+<script type="text/javascript" src="/scripts/libraries/3rdparty/layer/layer_local.js"></script>
+<script type="text/javascript" src="/scripts/libraries/3rdparty/Validform_v5.3.2_min.js"></script>
+<script type="text/javascript" src="/scripts/libraries/3rdparty/datepicker/WdatePicker.js"></script>
+<script type="text/javascript" src="/scripts/libraries/3rdparty/jtopo-0.4.8-min.js"></script>
+
+<script type="text/javascript" src="/scripts/libraries/global/ExtensionControl.js"></script>
+
+<script type="text/javascript" src="/scripts/app.js"></script>
+<script type="text/javascript" src="/scripts/view.js"></script>
+<!--服务器上注释下面js,下面js仅供页面调试-->
+ <script type="text/javascript" src="/scripts/screen/controller/utility/GuideController.js"></script>
+ <script type="text/javascript" src="/scripts/screen/controller/utility/SessionTimeoutController.js"></script>
+ <script type="text/javascript" src="/scripts/screen/controller/home/HomeController.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/utility/PagerController.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/user/UserController.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/event/EventController.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/event/SafeEventController.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/event/SystemEventController.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/log/LogController.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/log/LoginLogController.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/log/OperationLogController.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/device/DeviceController.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/device/BasicDeviceController.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/device/AdvanceDeviceController.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/rule/MacRuleController.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/rule/BlacklistController.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/rule/WhitelistController.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/nettopo/NettopoController.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/audit/ProtocolAuditController.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/audit/protocol.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/audit/FlowAuditController.js"></script>
+ <script async type="text/javascript" src="/scripts/screen/controller/audit/FlowDetailAuditController.js"></script>
+</body>
+</html>

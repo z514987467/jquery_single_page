@@ -1,0 +1,77 @@
+﻿<div class="chartlist">
+    <div class="dial">
+        <div id="$elementId$_cpuState" style="height:100%;"></div>
+    </div>
+    <div class="dial">
+        <div id="$elementId$_memoryState" style="height:100%;"></div>
+    </div>
+    <div class="dial">
+        <div id="$elementId$_diskState" style="height:100%;"></div>
+    </div>
+</div>
+<!-- <div class="chartlist"> -->
+    <!-- <div class="dial"> -->
+        <!-- <div id="divInterface" style="height:200px;" data-step="2" data-intro="Another step."></div> -->
+    <!-- </div> -->
+    <!-- <div class="dial"> -->
+        <!-- <div id="divDevice" style="height:200px;"></div> -->
+    <!-- </div> -->
+    <!-- <div class="dial"> -->
+        <!-- <div id="divPortocol" style="height:200px;"></div> -->
+    <!-- </div> -->
+<!-- </div> -->
+<div class="chartlist">
+    <div class="event-box">
+    <div class="event" style="background:#5fd4cb;">
+        <div class="title"><i class="cion-event01"></i>未读事件</div>
+        <div class="data"><a href="javascript: View.getInstance().init('EVENT_LIST', '事件信息');"><span id="$elementId$_noReadNum">0</span></a></div>
+    </div>
+    <div class="event" style="background:#48c3ec;">
+        <div class="title"><i class="cion-event02"></i>今日事件</div>
+        <div class="data"><a href="javascript: View.getInstance().init('EVENT_LIST', '事件信息');"><span id="$elementId$_todayEventNum">0</span></a></div>
+    </div>
+    <div class="event" style="background:#6bb6ef;">
+        <div class="title"><i class="cion-event03"></i>历史事件</div>
+        <div class="data"><a href="javascript: View.getInstance().init('EVENT_LIST', '事件信息');"><span id="$elementId$_historyEventNum">0</span></a></div>
+    </div>
+   
+	<div class="event" style="background:#6e9ad5;">
+    <div class="socket">
+        <ul class="portbox">
+            <li><span id="$elementId$_runLight">RUN<img src="/images/portbox_green.png"></span></li>
+            <li><span id="$elementId$_powerLight">POWER<img src="/images/portbox_red.png"></span></li>
+            <li><span id="$elementId$_findLight">BYPASS<img src="/images/portbox_green.png"></span></li>
+            <li><span id="$elementId$_alarmLight">ALARM<img src="/images/portbox_gray.png"></span></li>
+        </ul>
+        <ul class="jackbox">
+            <!-- <div class="line-name01"><span class="liname">BP</span></div> -->
+            <!-- <div class="line-name02"><span class="liname">BP</span></div> -->
+            <li><span id="$elementId$_consolePort"><p>CONSOLE</p><img src="/images/jackbox_no.png"></span></li>
+            <li><span id="$elementId$_mgmtPort"><p>MGMT</p><img src="/images/jackbox_yes.png"></span></li>
+            <li><span id="$elementId$_p0Port"><p>P0</p><img src="/images/jackbox_no.png"></span></li>
+            <li><span id="$elementId$_p1Port"><p>P1</p><img src="/images/jackbox_no.png"></span></li>
+            <li><span id="$elementId$_p2Port"><p>P2</p><img src="/images/jackbox_no.png"></span></li>
+            <li><span id="$elementId$_p3Port"><p>P3</p><img src="/images/jackbox_no.png"></span></li>
+        </ul>
+    </div>
+	</div>
+	 </div>
+</div>
+<div class="chartlist">
+    <div class="event" style="background:#9bd27f;">
+        <div class="title"><i class="cion-event04"></i>规则总数</div>
+        <div class="data"><a href="javascript: View.getInstance().init('RULE_BLACKLIST', '黑名单');"><span id="$elementId$_ruleNum">0</span></a></div>
+    </div>
+    <div class="event" style="background:#5fb3ef;">
+        <div class="title"><i class="cion-event05"></i>白名单</div>
+        <div class="data"><a href="javascript: View.getInstance().init('RULE_WHITELIST', '白名单');"><span id="$elementId$_whiteNum">0</span></a></div>
+    </div>
+    <div class="event" style="background:#7199de;">
+        <div class="title"><i class="cion-event06"></i>黑名单</div>
+        <div class="data"><a href="javascript: View.getInstance().init('RULE_BLACKLIST', '黑名单');"><span id="$elementId$_blackNum">0</span></a></div>
+    </div>
+    <div class="event" style="background:#56a2d3;">
+        <div class="title"><i class="cion-event07"></i>IP/MAC</div>
+        <div class="data"><a href="javascript: View.getInstance().init('RULE_MAC', 'IP/MAC');"><span id="$elementId$_ipmacNum">0</span></a></div>
+    </div>
+</div>

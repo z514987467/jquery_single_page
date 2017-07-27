@@ -1,0 +1,55 @@
+﻿<!--流量审计 begin-->
+<div class="eventinfo_box">
+    <div class="tabsafeev">
+        <div class="tabtitle">
+            <ul><li class="hit">流量审计</li></ul>
+        </div>
+        <div class="tabmian">
+            <div style="border-bottom: 1px #d4d4d4 solid;margin: 15px 20px auto; padding-bottom:10px;">
+                <button class="butchange refresh" data-id="$elementId$_btnRefresh" id="$elementId$_btnRefresh">刷新</button>
+            </div>
+            <div class="tabmiantxt" style="display:block;">
+                <div class="flow_port">
+                    <div class="flow_title">
+                        总流量(单位：Kbps)
+                    </div> 
+                    <div style="height:100%;" data-id="$elementId$_divLineChart" id="$elementId$_divLineChart"></div>  
+                </div>
+                <div class="flowbox">
+                    <div class="flow_propo">
+                        <div class="flow_title">
+                            <div class="rule-single-select float_right">
+                                <select class="flow_select" id="$elementId$_ddlTime2" data-id="$elementId$_ddlTime2">
+                                    <option value="1">最近一小时</option>
+                                    <option value="24">最近一天</option>
+                                    <option value="168">最近一周</option>
+                                </select>
+                            </div>
+                            设备流量占比
+                        </div>
+                        <div style="height:90%;" data-id="$elementId$_divLeftPieChart" id="$elementId$_divLeftPieChart"></div>
+                    </div>
+                    <div class="flow_propo" style="margin-left:1%;">
+                        <div class="flow_title">
+                            <div class="rule-single-select float_right">
+                                 <select class="flow_select" id="$elementId$_ddlTime3" data-id="$elementId$_ddlTime3">
+                                     <option value="1">最近一小时</option>
+                                     <option value="24">最近一天</option>
+                                     <option value="168">最近一周</option>
+                                 </select>
+                            </div>
+                            协议流量占比
+                        </div> 
+                        <div style="height:90%;" data-id="$elementId$_divRightPieChart" id="$elementId$_divRightPieChart"></div>
+                    </div>
+                </div>
+                <div class="tabel_div">
+                    <table data-id="$elementId$_tdFlowList" id="$elementId$_tdFlowList"></table>
+                     <div class="allevent">总共<span style="color:#ff8761;" data-id="$elementId$_lblTotalFlow" id="$elementId$_lblTotalFlow">0</span>条记录</div>
+                </div>
+                <div class="evpage" data-id="$elementId$_pagerContent" id="$elementId$_pagerContent"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--流量审计 end-->

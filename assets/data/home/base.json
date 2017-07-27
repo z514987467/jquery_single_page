@@ -1,0 +1,20 @@
+{
+  "sys_info": {
+    "agl0Info": "agl0;192.168.80.156;d8:cb:8a:8c:0b:ef  ;255.255.255.0", 
+    "agl0LinkState": 0, 
+    "blackNum": 0, 
+    "cpuState": 3, 
+    "diskState": 41, 
+    "historyEventNum": 59, 
+    "ipmacNum": 0, 
+    "memoryState": 93, 
+    "noReadNum": 114, 
+    "p0Info": "eth0;192.168.80.156;d8:cb:8a:8c:0b:ef  ;255.255.255.0", 
+    "p0LinkState": 1, 
+    "p1Info": "eth1;0.0.0.0;68:05:ca:35:6c:bc  ;0.0.0.0", 
+    "p1LinkState": 1, 
+    "rulesNum": 4, 
+    "todayEventNum": 0, 
+    "whiteNum": 4
+  }
+}

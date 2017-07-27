@@ -1,0 +1,30 @@
+﻿<!--模式管理  begin-->
+<div class="eventinfo_box">
+    <div class="tabsafeev" style="margin-top:0px;">
+        <div class="tabmian">
+            <div class="tabmiantxt" style="display:block">
+                <div class="device_box">
+                    <div class="h1">设备信息</div>
+                    <ul class="dv_txt">
+                        <li>设备型号: <span id="$elementId$_lblDeviceTypeNo" data-id="$elementId$_lblDeviceTypeNo"></span></li>
+                        <li>序列号: <span id="$elementId$_lblDeviceSerialNo" data-id="$elementId$_lblDeviceSerialNo"></span></li>
+                        <li>设备版本: <span id="$elementId$_lblDeviceVersion" data-id="$elementId$_lblDeviceVersion"></span></li>
+                    </ul>
+                    <hr />
+                    <div class="h1">管理模式切换</div>
+                    <div class="dediv">
+                        <input type="radio" name="$elementId$_rabMode" value="0" class="dxinput" id="$elementId$_rabMode2" data-id="$elementId$_rabMode2" /><label for="$elementId$_rabMode2"></label>集中管理
+                        <input type="radio" name="$elementId$_rabMode" value="1" checked="checked" class="dxinput" id="$elementId$_rabMode1" data-id="$elementId$_rabMode1" /><label for="$elementId$_rabMode1" style="margin-left:40px;"></label>自管理
+                        <button class="button_cut button_blue" style="margin:0px 0px 0px 30px;" data-id="$elementId$_btnMode" id="$elementId$_btnMode">确认</button>
+                    </div>
+                    <div class="dediv" id="$elementId$_divMode" data-id="$elementId$_divMode">
+                        <!--<input type="radio" name="$elementId$_rabSelfMode" value="1" checked="checked" class="dxinput" id="$elementId$_rabSelfMode1" data-id="$elementId$_rabSelfMode1" /><label style="margin-left:35px;" for="$elementId$_rabSelfMode1"></label>自动发现安全监管平台-->
+                        <input type="radio" name="$elementId$_rabSelfMode" value="0" checked="checked" class="dxinput" id="$elementId$_rabSelfMode2" data-id="$elementId$_rabSelfMode2" /><label for="$elementId$_rabSelfMode2"></label>
+                        手工配置安全监管平台<input type="text" style="margin-left:10px;" class="inputde" data-id="$elementId$_txtModeIP" id="$elementId$_txtModeIP" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--模式管理  end-->

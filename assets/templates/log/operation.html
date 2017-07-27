@@ -1,0 +1,34 @@
+﻿<div class="tabdiv">
+    <button class="butchange refresh" data-id="$elementId$_btnRefresh" id="$elementId$_btnRefresh">刷新</button>
+    <button class="butchange export" data-id="$elementId$_btnExport" id="$elementId$_btnExport">导出日志</button>
+    <button class="but butip" data-id="$elementId$_btnFilter" id="$elementId$_btnFilter">过滤条件</button>
+</div>
+<div class="filtrate" style="display:none;" data-id="$elementId$_divFilter" id="$elementId$_divFilter">
+    <div class="tabdiv">
+        <label>开始时间: </label>
+        <input type="text" class="Wdate" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" data-id="$elementId$_txtStartDateTime" id="$elementId$_txtStartDateTime" />
+        <label>结束时间: </label>
+        <input type="text" class="Wdate" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'})" data-id="$elementId$_txtEndDateTime" id="$elementId$_txtEndDateTime" />
+        <label>IP: </label><input type="text" class="inputip" data-id="$elementId$_txtIP" id="$elementId$_txtIP" />
+    </div>
+    <div class="tabdiv">
+        <label>用户: </label><input type="text" class="inputip" data-id="$elementId$_txtUserName" id="$elementId$_txtUserName" />
+        <label>输入命令: </label><input type="text" class="inputip" data-id="$elementId$_txtProtocol" id="$elementId$_txtProtocol" />
+        <label>执行结果: </label>
+        <div class="rule-single-select">
+            <select type="text" class="selctip" data-id="$elementId$_ddlExecuteStatus" id="$elementId$_ddlExecuteStatus">
+                <option value="">全部</option>
+                <option value="0">成功</option>
+                <option value="1">失败</option>
+            </select>
+        </div>
+		<button class="but butser" data-id="$elementId$_btnSearch" id="$elementId$_btnSearch">搜索</button>
+    </div>
+</div>
+<div class="tabel_div">
+    <table data-id="$elementId$_tdLogList" id="$elementId$_tdLogList">
+    </table>
+    <div class="allevent">总共 <span style="color:#ff8761;" data-id="$elementId$_lblTotalLog" id="$elementId$_lblTotalLog"> 0</span> 个事件</div>
+</div>
+<div class="evpage" data-id="$elementId$_pagerContent" id="$elementId$_pagerContent">
+</div>

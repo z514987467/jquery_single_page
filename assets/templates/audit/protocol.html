@@ -1,0 +1,73 @@
+﻿<div class="eventinfo_box">
+    <div class="tabsafeev">
+        <div class="tabtitle">
+            <ul><li class="hit">协议审计</li></ul>
+        </div>
+        <div class="tabmian">
+            <div class="tabmiantxt" style="display:block;">
+                <div data-id="$elementId$_divFilter" id="$elementId$_divFilter">
+                    <div class="tabdiv">
+                        <label>起源IP: </label>
+                        <input type="text" class="inputip" data-id="$elementId$_txtIP" id="$elementId$_txtIP" />
+                        <label>源MAC: </label>
+                        <input type="text" class="inputip" data-id="$elementId$_txtMac" id="$elementId$_txtMac" />
+                        <label>源端口: </label>
+                        <input type="text" class="inputip" data-id="$elementId$_txtPort" id="$elementId$_txtPort" />
+                        <label>时间: </label>
+                        <div class="rule-single-select">
+                            <select class="strength" id="$elementId$_ddlTime" data-id="$elementId$_ddlTime">
+                                <option value="0">不限</option>
+                                <option value="1">过去一小时</option>
+                                <option value="24">过去一天</option>
+                                <option value="168">过去一周</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="tabdiv">
+                        <label>目标IP: </label>
+                        <input type="text" class="inputip" data-id="$elementId$_txtDIP" id="$elementId$_txtDIP" />
+                        <label>目标MAC: </label>
+                        <input type="text" class="inputip" data-id="$elementId$_txtDMac" id="$elementId$_txtDMac" />
+                        <label>目标端口: </label>
+                        <input type="text" class="inputip" data-id="$elementId$_txtDPort" id="$elementId$_txtDPort" />
+                        <label>协议: </label>
+                        <div class="rule-single-select">
+                            <select class="strength" id="$elementId$_ddlProtocol" data-id="$elementId$_ddlProtocol">
+                                <option value="">所有</option>
+                                <option value="http">http</option>
+                                <option value="ftp">ftp</option>
+                                <option value="pop3">pop3</option>
+                                <option value="smtp">smtp</option>
+                                <option value="telnet">telnet</option>
+                                <option value="snmp">snmp</option>
+                                <option value="modbus">modbus</option>
+                                <option value="opcda">opcda</option>
+                                <option value="s7">s7</option>
+                                <option value="dnp3">dnp3</option>
+                                <option value="iec104">iec104</option>
+                                <option value="mms">mms</option>
+                                <option value="profinetio">profinetio</option>
+                                <option value="pnrtdcp">pnrtdcp</option>
+                                <option value="goose">goose</option>
+                                <option value="sv">sv</option>
+                                <option value="eniptcp">eniptcp</option>
+                                <option value="enipudp">enipudp</option>
+                                <option value="enipio">enipio</option>
+                                <option value="opcua">opcua</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="tabdiv">
+                        <button class="butchange refresh" data-id="$elementId$_btnRefresh" id="$elementId$_btnRefresh">刷新</button>
+                        <button class="but butser" data-id="$elementId$__btnSearch" id="$elementId$_btnSearch">搜索</button>
+                    </div>
+                </div>
+                <div class="tabel_div">
+                    <table data-id="$elementId$_tdProtocolList" id="$elementId$_tdProtocolList"></table>
+                    <div class="allevent">总共 <span style="color:#ff8761;" data-id="$elementId$_lblTotalProtocol" id="$elementId$_lblTotalProtocol">0</span> 条记录</div>
+                </div>
+                <div class="evpage" data-id="$elementId$_pagerContent" id="$elementId$_pagerContent"></div>
+            </div>
+        </div>
+    </div>
+</div>

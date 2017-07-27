@@ -1,0 +1,62 @@
+﻿<!--用户管理  begin-->
+<div class="user_box">
+    <form id="$elementId$_userForm">
+        <div class="h1">账户信息</div>
+        <div class="h2">
+            <label>我的账户: </label>
+            <span id="$elementId$_userName"></span>
+        </div>
+        <hr>
+        <div class="h1">密码修改</div>
+        <div class="user_div">
+            <label class="h2">原密码: </label>
+            <input id="$elementId$_oldPassword" type="password" class="userinput" />
+        </div>
+        <div class="user_div">
+            <label class="h2">新密码: </label>
+            <input id="$elementId$_newPassword" type="password" class="userinput" datatype="/^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#]).{6,16}$/" errormsg="必须由字母、数字、特殊字符(@,!,#)组成，长度6到16位" />
+            <span class="Validform_checktip">必须由字母、数字、特殊字符(@,!,#)组成，长度6到16位</span>
+            <span id="$elementId$_newPasswordInfo" style="padding-left:10px;"></span>
+        </div>
+        <div class="user_div">
+            <label class="h2">密码确认: </label>
+            <input id="$elementId$_newPassword1" type="password" class="userinput" />
+            <span class="Validform_checktip"></span>
+        </div>
+        <div class="user_div">
+            <label class="h2"></label>
+            <button style="margin-left: 135px;" id="$elementId$_changePassword" type="submit" class="button button_sure">确认</button>
+        </div>
+    </form>
+    <form id="$elementId$_newUserForm" style="display: none;visibility: hidden">
+        <hr>
+        <div class="h1">添加新用户</div>
+        <div class="user_div">
+            <label class="h2">用户名: </label>
+            <input id="$elementId$_newUserName" type="text" class="userinput" datatype="/^[a-zA-Z]{1}[\w]{3,24}$/" errormsg="必须以字母开头，4-25个字符组成" />
+            <span class="Validform_checktip">必须以字母开头，4-25个字符组成</span>
+        </div>
+        <div class="user_div">
+            <label class="h2">新密码: </label>
+            <input id="$elementId$_newUserPassword" type="password" class="userinput" datatype="/^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#]).{6,16}$/" errormsg="必须由字母、数字、特殊字符(@,!,#)组成，长度6到16位">
+            <span class="Validform_checktip">必须由字母、数字、特殊字符(@,!,#)组成，长度6到16位</span>
+            <span id="$elementId$_newUserPasswordInfo" style="padding-left:10px;"></span>
+        </div>
+        <div class="user_div">
+            <label class="h2">密码确认: </label>
+            <input id="$elementId$_newUserPassword1" type="password" class="userinput" />
+            <span class="Validform_checktip"></span>
+        </div>
+        <div class="user_div">
+            <label class="h2"></label>
+            <button style="margin-left: 127px;" id="$elementId$_addUser" class="button button_add" type="submit">添加</button>
+        </div>
+</form>
+    <hr>
+    <div class="h1">所有用户</div>
+    <div class="user_div">
+        <table id="$elementId$_userList">
+        </table>
+    </div>
+</div>
+<!--用户管理  end-->

@@ -1,0 +1,95 @@
+﻿<div class="eventinfo_box">
+    <div class="tabsafeev">
+        <div class="tabtitle">
+            <ul>
+                <li class="hit">IP/MAC</li>
+            </ul>
+        </div>
+        <div class="tabmian">
+            <!--事件加载-->
+            <div class="tabmiantxt" style="display:block;">
+                <div class="tabdiv">
+                    <!-- <button class="roll_but but_all" data-id="$elementId$_btnEnable" id="$elementId$_btnEnable">启用所有</button> -->
+                    <!-- <button class="roll_but but_disable" data-id="$elementId$_btnDisable" id="$elementId$_btnDisable">禁用所有</button> -->
+                    <button class="roll_but but_off float_left" id="$elementId$_chkAll" data-id="$elementId$_chkAll"
+                            isChecked="true">全选
+                    </button>
+                    <button class="roll_but but_start float_left" id="$elementId$_btnEnable"
+                            data-id="$elementId$_btnEnable">部署
+                    </button>
+                    <button class="roll_but but_empty float_left" id="$elementId$_btnDelete"
+                            data-id="$elementId$_btnDelete">删除
+                    </button>
+                    <button class="butchange refresh float_left" data-id="$elementId$_btnRefresh"
+                            id="$elementId$_btnRefresh">刷新
+                    </button>
+                    <div class="select-all float_left roll_but">
+                        处理措施：
+                        <div class="rule-single-select">
+                            <select id="$elementId$_dllEvent" class="select-note">
+                                <option value="">---请选择---</option>
+                                <option value="1">警告</option>
+                                <option value="2">丢弃</option>
+                                <option value="3">阻断</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="select-all float_left roll_but">
+                        未知设备接入监控：
+                        <div class="rule-single-select">
+                            <select id="$elementId$_dllUnknownIpMacEvent" class="select-note">
+                                <option value="">---请选择---</option>
+                                <option value="0">通过</option>
+                                <option value="1">警告</option>
+                                <option value="2">丢弃</option>
+                                <option value="3">阻断</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="roll_but but_disable float_right" id="$elementId$_empty" data-id="$elementId$_empty">
+                        清空已部署规则
+                    </button>
+                </div>
+                <hr/>
+                <div class="filtrate" data-id="$elementId$_divFilter" id="$elementId$_divFilter">
+                    <div class="tabdiv">
+                        <label>设备厂商: </label>
+                        <input type="text" class="inputip" data-id="$elementId$_txtDevice" id="$elementId$_txtDevice"/>
+                        <label>IP: </label>
+                        <input type="text" class="inputip" data-id="$elementId$_txtIP" id="$elementId$_txtIP"
+                               placeholder="(格式：192.168.1.1)" title="格式：192.168.1.1"/>
+                        <label>MAC: </label>
+                        <input type="text" class="inputip" data-id="$elementId$_txtMac" id="$elementId$_txtMac"
+                               placeholder="(格式：1A:2B:3C:66:DE:88)" title="格式：1A:2B:3C:66:DE:88"/>
+                        <button class="but button_add" data-id="$elementId$_btnAdd" id="$elementId$_btnAdd">添加</button>
+						
+                    </div>
+                </div>
+                <div class="tabdiv">
+                    <span class="float_right margin_right20">
+                        过滤：
+                        <div class="rule-single-select">
+                            <select id="$elementId$_ddlFilter" data-id="$elementId$_ddlFilter">
+                                <option value="">全部</option>
+                                <option value="0">未启用</option>
+                                <option value="1">启用</option>
+                            </select>
+                        </div>
+                    </span>
+                </div>
+                <div class="tabel_div">
+                    <table data-id="$elementId$_tdRuleList" id="$elementId$_tdRuleList"></table>
+                    <div class="allevent">
+                        已部署规则数/总规则数：
+                        <span style="color:#ff8761;" id="$elementId$_lblTotalRule1">0</span>
+                        <span style="color:#ff8761;">/</span>
+                        <span style="color:#ff8761;" id="$elementId$_lblTotalRule2">0</span>
+                    </div>
+                </div>
+                <div class="evpage" data-id="$elementId$_pagerContent" id="$elementId$_pagerContent">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

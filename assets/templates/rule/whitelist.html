@@ -1,0 +1,101 @@
+﻿<div class="eventinfo_box">
+    <div class="tabsafeev">
+        <div class="tabtitle">
+            <ul>
+                <li class="hit">白名单</li>
+            </ul>
+        </div>
+        <div class="tabmian">
+            <div class="tabmiantxt" style="display:block;">
+                <!--学习设置-->
+                <div class="dediv highlight">
+                    <label class="float_left">开始时间: </label>
+                    <div class="float_left">
+                        <input type="text" class="Wdate" data-id="$elementId$_txtStartDateTime"
+                               id="$elementId$_txtStartDateTime"/>
+                    </div>
+                    <label class="float_left">学习时长: </label>
+                    <div class="float_left" data-id="$elementId$_divSlider" id="$elementId$_divSlider">
+                        <div class="rule-single-select">
+                            <select id="$elementId$_ddlStudyDurtion" data-id="$elementId$_ddlStudyDurtion">
+                                <option value="5">5分钟</option>
+                                <option value="30">30分钟</option>
+                                <option value="60">1小时</option>
+                                <option value="120">2小时</option>
+                                <option value="600">10小时</option>
+                                <option value="960">16小时</option>
+                                <option value="1440">1天</option>
+                                <option value="4320">3天</option>
+                                <option value="10080">1周</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="float_left" data-id="$elementId$_divProgressbar" id="$elementId$_divProgressbar">
+                        <div id="progressbar" style="width:400px; margin-top:5px;">
+                            <div class="progress-label"></div>
+                        </div>
+                    </div>
+                    <button data-id="$elementId$_btnStudy" id="$elementId$_btnStudy"
+                            class="button_blue but_beginstudy float_left " style="margin-left:12px; margin-top:4px;">
+                        停止学习
+                    </button>
+                </div>
+                <hr/>
+                <div class="dediv highlight">
+                    <button class="roll_but but_off float_left" data-id="$elementId$_chkAll" id="$elementId$_chkAll"
+                            isChecked="true">全选
+                    </button>
+                    <button data-id="$elementId$_btnEnable" id="$elementId$_btnEnable"
+                            class="roll_but but_start float_left">部署
+                    </button>
+                    <button data-id="$elementId$_btnDisable" id="$elementId$_btnDisable"
+                            class="roll_but but_empty float_left">删除
+                    </button>
+                    <button class="roll_but but_refresh float_left" data-id="$elementId$_btnRefresh"
+                            id="$elementId$_btnRefresh">刷新
+                    </button>
+                    <div class="select-all float_left roll_but">
+                        操作全部：
+                        <div class="rule-single-select">
+                            <select id="$elementId$_dllEventAll" class="select-note">
+                                <option value="">---请选择---</option>
+                                <option value="0">设为全部通过</option>
+                                <option value="1">设为全部警告</option>
+                                <option value="2">设为全部丢弃</option>
+                                <option value="3">设为全部阻断</option>
+                            </select></div>
+                    </div>
+                    <button class="roll_but but_disable float_right" id="$elementId$_empty" data-id="$elementId$_empty">
+                        清空已部署规则
+                    </button>
+                </div>
+                <div class="tabdiv">
+                    <span class="float_right margin_right20">
+                        过滤：
+                        <div class="rule-single-select">
+                            <select id="$elementId$_ddlFilter" data-id="$elementId$_ddlFilter">
+                                <option value="">全部</option>
+                                <option value="0">未启用</option>
+                                <option value="1">启用</option>
+                            </select>
+                        </div>
+                    </span>
+                </div>
+                <div class="rulebase">
+                    <div class="tabel_div">
+                        <table data-id="$elementId$_tdWhitelistList" id="$elementId$_tdWhitelistList"></table>
+                        <div class="allevent">
+                            已部署规则数/总规则数：
+                            <span style="color:#ff8761;" id="$elementId$_lblTotalWhitelist1">0</span>
+                            <span style="color:#ff8761;">/</span>
+                            <span style="color:#ff8761;" id="$elementId$_lblTotalWhitelist2">0</span>
+                        </div>
+                    </div>
+                    <div class="evpage" data-id="$elementId$_pagerContent" id="$elementId$_pagerContent">
+                    </div>
+                </div>
+                <!--学习设置-->
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+﻿<div class="eventinfo_box nettopo_box" id="mainDeviceDiv">
+    <div id="leftContainer">
+        <canvas width="800" height="700" id="canvas" style="cursor: default;"></canvas>
+    </div>
+    <div class="netdiv">
+        <div class="net_button" id="btnDeviceNet"></div>
+        <div class="net_dic" id="rightContainer">
+            <div class="net_title">设备信息</div>
+            <div class="net_img">
+                <span class="margin_right20">
+                    <img src="/images/net_img.png"></span>
+                <div class="float_right">
+                    <label class="netlabel">设备状态</label>
+                    <div class="net_state">
+                        <img src="/images/portbox_green.png">
+                        连线</div>
+                </div>
+            </div>
+            <div class="net_title">设备规格</div>
+            <div class="padding_15">
+                <label class="netlabel">设备名称</label>
+                <input type="text" class="netiput" id="txtDeviceName" data-key="">
+                <label class="netlabel">IP地址</label>
+                <input type="text" class="netiput" id="txtDeviceIP" readonly="readonly">
+                <label class="netlabel">MAC地址</label>
+                <input type="text" class="netiput" id="txtDeviceMAC" readonly="readonly">
+                <label class="netlabel">协议</label>
+                <input type="text" class="netiput" id="txtDeviceProtocal" readonly="readonly">
+                
+            </div>
+            <div class="netbutton">
+                <button class="buttonde" id="btnUpdate">修改</button>
+                <!--<button class="details" id="$elementId$_btnDetails" data-id="$elementId$_btnDetails">详情</button>-->
+            </div>
+        </div>
+    </div>
+</div>
