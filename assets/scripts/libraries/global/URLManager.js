@@ -119,7 +119,7 @@ URLManager.prototype.ajaxCallByURL = function (link, method, data, async) {
                 url: link,
                 dataType: "json",
                 data: data,
-                type: method,
+                type: "GET",
                 async: way,
                 cache: false,
                 contentType: "application/json; charset=utf-8",
