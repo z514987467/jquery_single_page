@@ -857,18 +857,18 @@ HomeController.prototype.getPortLED = function () {
         });
         promise.done(function (result) {
             if (typeof (result) != "undefined") {
-                $(parent.pRunLight + "," + parent.pPowerLight + "," + parent.pBypassLight + "," + parent.pAlarmLight).find("img").attr("src", "/images/portbox_gray.png");
+                $(parent.pRunLight + "," + parent.pPowerLight + "," + parent.pBypassLight + "," + parent.pAlarmLight).find("img").attr("src", "./images/portbox_gray.png");
                 if (typeof(result.RUN) != "undefined" && $.trim(result.RUN) == "ON") {
-                    $(parent.pRunLight).find("img").attr("src", "/images/portbox_green.png");
+                    $(parent.pRunLight).find("img").attr("src", "./images/portbox_green.png");
                 }
                 if (typeof(result.POWER) != "undefined" && $.trim(result.POWER) == "ON") {
-                    $(parent.pPowerLight).find("img").attr("src", "/images/portbox_red.png");
+                    $(parent.pPowerLight).find("img").attr("src", "./images/portbox_red.png");
                 }
                 if (typeof(result.BYPASS) != "undefined" && $.trim(result.BYPASS) == "ON") {
-                    $(parent.pBypassLight).find("img").attr("src", "/images/portbox_green.png");
+                    $(parent.pBypassLight).find("img").attr("src", "./images/portbox_green.png");
                 }
                 if (typeof(result.ALARM) != "undefined" && $.trim(result.ALARM) == "ON") {
-                    $(parent.pAlarmLight).find("img").attr("src", "/images/portbox_red.png");
+                    $(parent.pAlarmLight).find("img").attr("src", "./images/portbox_red.png");
                 }
             }
             else {
