@@ -35,7 +35,7 @@ TemplateManager.prototype.requestTemplates = function(templateArray, callback) {
 			
 			for (i = 0, n = loadQueue.length; i < n; i++) {
 				$.ajax({
-					url: '/templates/' + loadQueue[i].split("_").join("/") + '.html',
+					url: './templates/' + loadQueue[i].split("_").join("/") + '.html',
 					templateID: loadQueue[i],
 					success: function (html) {
 						//	console.log(this.templateID + html);
