@@ -17,6 +17,8 @@ $(function () {
                     // if (beginnerGuide == null || beginnerGuide == "" || beginnerGuide == "null") {
                     //     CookieManager.setCookieValue("beginnerGuide", "1", 30);
                     // }
+                    renderUI();
+                    return;
                     AuthManager.getInstance().isLoggedIn(function () {
                         $("body").css({"display": "", "visibility": "visible"})
                         new kea.base.utility.SessionTimeoutController().init();
