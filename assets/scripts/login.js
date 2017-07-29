@@ -15,6 +15,7 @@
 }
 
 function initializeLoginScreen() {
+    window.location.replace(APPCONFIG["default"].HOMEPAGE_URL);
     var promise = getSecretKey();
     promise.fail(function (jqXHR, textStatus, err) {
         console.log(textStatus + " - " + err.message);
