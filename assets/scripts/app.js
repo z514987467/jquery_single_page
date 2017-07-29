@@ -17,6 +17,7 @@ $(function () {
                     // if (beginnerGuide == null || beginnerGuide == "" || beginnerGuide == "null") {
                     //     CookieManager.setCookieValue("beginnerGuide", "1", 30);
                     // }
+                    $("body").css({"display": "", "visibility": "visible"})
                     renderUI();
                     return;
                     AuthManager.getInstance().isLoggedIn(function () {
