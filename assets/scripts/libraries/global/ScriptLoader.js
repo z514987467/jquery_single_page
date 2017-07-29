@@ -22,7 +22,7 @@ ScriptLoader.prototype.includeLibraries = function (libraryList, callback) {
         var parent = this;
         var script;
 
-        if (APPCONFIG.ENV == "localhost" || APPCONFIG.ENV == "127.0.0.1") {
+        if (APPCONFIG.ENV == "localhost" || APPCONFIG.ENV == "127.0.0.1" || 1 == 1) {
             callback(true); // For local development, don't use script manager, just use script files included in default.html
         }
         else if (typeof (libraryList) != "undefined" && libraryList != null) {
