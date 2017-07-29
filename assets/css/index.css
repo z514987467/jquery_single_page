@@ -29,32 +29,32 @@ small { font-size: 12px; color: #3e4b62; margin-left: 5px;}
 
 /* animation*/
 @keyframes loginbg {
-    0% { background: url(../images/banner01.jpg) no-repeat;}
-    25% {background: url(../images/banner03.jpg) no-repeat;}
+    0% { background: url(./../images/banner01.jpg) no-repeat;}
+    25% {background: url(./../images/banner03.jpg) no-repeat;}
    
-    75% { background: url(../images/banner04.jpg) no-repeat;}
-    100% { background: url(../images/banner01.jpg) no-repeat;}
+    75% { background: url(./../images/banner04.jpg) no-repeat;}
+    100% { background: url(./../images/banner01.jpg) no-repeat;}
 }
 @-webkit-keyframes loginbg {
-    0% { background: url(../images/banner01.jpg) no-repeat; background-size: cover;}
-    25% {background: url(../images/banner03.jpg) no-repeat; background-size: cover;}
+    0% { background: url(./../images/banner01.jpg) no-repeat; background-size: cover;}
+    25% {background: url(./../images/banner03.jpg) no-repeat; background-size: cover;}
     
-    75% { background: url(../images/banner04.jpg) no-repeat; background-size: cover;}
-    100% { background: url(../images/banner01.jpg) no-repeat; background-size: cover;}
+    75% { background: url(./../images/banner04.jpg) no-repeat; background-size: cover;}
+    100% { background: url(./../images/banner01.jpg) no-repeat; background-size: cover;}
 }
 @-ms-keyframes loginbg {
-    0% { background: url(../images/banner01.jpg) no-repeat; background-size: cover;}
-    25% {background: url(../images/banner03.jpg) no-repeat; background-size: cover;}
+    0% { background: url(./../images/banner01.jpg) no-repeat; background-size: cover;}
+    25% {background: url(./../images/banner03.jpg) no-repeat; background-size: cover;}
    
-    75% { background: url(../images/banner04.jpg) no-repeat; background-size: cover;}
-    100% { background: url(../images/banner01.jpg) no-repeat; background-size: cover;}
+    75% { background: url(./../images/banner04.jpg) no-repeat; background-size: cover;}
+    100% { background: url(./../images/banner01.jpg) no-repeat; background-size: cover;}
 }
 @-moz-keyframes loginbg {
-    0% { background: url(../images/banner01.jpg) no-repeat; background-size: cover;}
-    25% {background: url(../images/banner03.jpg) no-repeat; background-size: cover;}
+    0% { background: url(./../images/banner01.jpg) no-repeat; background-size: cover;}
+    25% {background: url(./../images/banner03.jpg) no-repeat; background-size: cover;}
    
-    75% { background: url(../images/banner04.jpg) no-repeat; background-size: cover;}
-    100% { background: url(../images/banner01.jpg) no-repeat; background-size: cover;}
+    75% { background: url(./../images/banner04.jpg) no-repeat; background-size: cover;}
+    100% { background: url(./../images/banner01.jpg) no-repeat; background-size: cover;}
 }
 
 @keyframes arrows { 0% { top:20px;} 50% {top:25px;} 100% { top:20px;}}
@@ -62,10 +62,10 @@ small { font-size: 12px; color: #3e4b62; margin-left: 5px;}
 @-ms-keyframes arrows { 0% { top:20px;} 50% {top:25px;} 100% { top:20px;}}
 @-moz-keyframes arrows { 0% { top:20px;} 50% {top:25px;} 100% { top:20px;}}
 
-@keyframes arrowson { 0% { background:url(../images/arrowson01.png) no-repeat;} 35% { background:url(../images/arrowson02.png) no-repeat;} 75% { background:url(../images/arrowson03.png) no-repeat;} 100% { background:url(../images/arrowson01.png) no-repeat;}}
-@-webkit-keyframes arrowson { 0% { background:url(../images/arrowson01.png) no-repeat;} 35% { background:url(../images/arrowson02.png) no-repeat;} 75% { background:url(../images/arrowson03.png) no-repeat;} 100% { background:url(../images/arrowson01.png) no-repeat;}}
-@-ms-keyframes arrowson { 0% { background:url(../images/arrowson01.png) no-repeat;} 35% { background:url(../images/arrowson02.png) no-repeat;} 75% { background:url(../images/arrowson03.png) no-repeat;} 100% { background:url(../images/arrowson01.png) no-repeat;}}
-@-moz-keyframes arrowson { 0% { background:url(../images/arrowson01.png) no-repeat;} 35% { background:url(../images/arrowson02.png) no-repeat;} 75% { background:url(../images/arrowson03.png) no-repeat;} 100% { background:url(../images/arrowson01.png) no-repeat;}}
+@keyframes arrowson { 0% { background:url(./../images/arrowson01.png) no-repeat;} 35% { background:url(./../images/arrowson02.png) no-repeat;} 75% { background:url(./../images/arrowson03.png) no-repeat;} 100% { background:url(./../images/arrowson01.png) no-repeat;}}
+@-webkit-keyframes arrowson { 0% { background:url(./../images/arrowson01.png) no-repeat;} 35% { background:url(./../images/arrowson02.png) no-repeat;} 75% { background:url(./../images/arrowson03.png) no-repeat;} 100% { background:url(./../images/arrowson01.png) no-repeat;}}
+@-ms-keyframes arrowson { 0% { background:url(./../images/arrowson01.png) no-repeat;} 35% { background:url(./../images/arrowson02.png) no-repeat;} 75% { background:url(./../images/arrowson03.png) no-repeat;} 100% { background:url(./../images/arrowson01.png) no-repeat;}}
+@-moz-keyframes arrowson { 0% { background:url(./../images/arrowson01.png) no-repeat;} 35% { background:url(./../images/arrowson02.png) no-repeat;} 75% { background:url(./../images/arrowson03.png) no-repeat;} 100% { background:url(./../images/arrowson01.png) no-repeat;}}
 
 
 
@@ -88,26 +88,26 @@ small { font-size: 12px; color: #3e4b62; margin-left: 5px;}
 
 
 /*login.css*/
-.login_bg {width:100%; height: 100%; background: url(../images/banner04.jpg) no-repeat top #0C3C76; background-size: cover;   position:relative;
+.login_bg {width:100%; height: 100%; background: url(./../images/banner04.jpg) no-repeat top #0C3C76; background-size: cover;   position:relative;
     animation:loginbg 16s infinite; -webkit-animation:loginbg 16s infinite; -ms-animation:loginbg 16s infinite; -moz-animation:loginbg 16s infinite; }
 .login_bottom { width: 100%; height: 120px; background: #0c3c76; position: fixed; bottom: 0;}
 .login_bottom img { margin-right: 10px;}
 .login_copyright { float:left; color: #ffffff; font-size: 1em; margin-left: 100px; text-align: center;line-height: 40px; padding-top: 22px; }
 .login_font { line-height: 120px; margin-right: 100px; color: #ffffff; font-size: 1.3em; letter-spacing: 4px; text-shadow: 2px 2px 4px #09131F;}
 .login_box { position: absolute; top: 50%; left: 150px; margin-top: -200px; width: 422px; height: 350px; font-size: 14px;}
-.login_box .login_logo { height: 62px; background: url(../images/bg.png) no-repeat 35px -420px;}
-.login_box .loginbox { height: 244px; margin-top: 20px; padding: 10px 20px 20px 20px; background: url(../images/bg.png) no-repeat 0px 0px;; position: relative; }
+.login_box .login_logo { height: 62px; background: url(./../images/bg.png) no-repeat 35px -420px;}
+.login_box .loginbox { height: 244px; margin-top: 20px; padding: 10px 20px 20px 20px; background: url(./../images/bg.png) no-repeat 0px 0px;; position: relative; }
 .login_box .loginbox .inputbox { height: 105px; padding: 15px; border-radius: 2px; background: #000000; position: relative;}
 .login_box input { width: 310px; height: 43px; border:0px; padding-left: 40px; background: #18222c; font-size: 1em; line-height: 43px; color: #ffffff; outline: none;}
 .login_box input:-webkit-autofill {-webkit-box-shadow: 0 0 0px 1000px #18222c inset; -webkit-text-fill-color: #fff;}
 .login_box input:focus { outline:2px #ca7420 solid;}
-.login_box .cion-log-user { position: absolute; width: 30px; height: 40px; top: 15px; left: 15px; background: url(../images/cion.png) no-repeat -315px -354px; }
-.login_box .cion-log-password { position: absolute; width: 30px; height: 40px;  top: 73px; left: 15px; background: url(../images/cion.png) no-repeat -315px -404px; }
+.login_box .cion-log-user { position: absolute; width: 30px; height: 40px; top: 15px; left: 15px; background: url(./../images/cion.png) no-repeat -315px -354px; }
+.login_box .cion-log-password { position: absolute; width: 30px; height: 40px;  top: 73px; left: 15px; background: url(./../images/cion.png) no-repeat -315px -404px; }
 .log_but { width: 382px; height: 50px; background: #0a4484; font-size: 1.2em; letter-spacing: 2px; margin-top: 15px; cursor: pointer; text-align: center; color: #ffffff; border:0; border-radius: 3px; font-family: "Microsoft YaHei"; outline: none;}
 .log_but:hover { background: #ca7420;}
-.log_bubg { width: 14px; height: 14px; background: url(../images/cion.png) no-repeat -151px -870px; position: absolute; bottom: 47px; right: 40px; }
+.log_bubg { width: 14px; height: 14px; background: url(./../images/cion.png) no-repeat -151px -870px; position: absolute; bottom: 47px; right: 40px; }
 .log_text { color:#ff9600; height: 34px; line-height:34px; text-align: center;}
-.cion-copyright { display: inline-block; vertical-align: middle; width: 154px; height: 33px; background: url(../images/bg.png) no-repeat -260px -517px;}
+.cion-copyright { display: inline-block; vertical-align: middle; width: 154px; height: 33px; background: url(./../images/bg.png) no-repeat -260px -517px;}
 
 
 
@@ -117,24 +117,24 @@ small { font-size: 12px; color: #3e4b62; margin-left: 5px;}
 .guide .text .guidetitle:before { content: "\2022"; position: absolute; font-size: 1em; left: 0px;  }
 .guide .text a { text-decoration: underline; color: #54f3fa;}
 .guide .arrow { position: relative; float: left; }
-.guide .arrow .cion-arrow { width: 24px; height: 40px; position: absolute;top: 131px; background: url(../images/cion.png) no-repeat -320px -856px;}
+.guide .arrow .cion-arrow { width: 24px; height: 40px; position: absolute;top: 131px; background: url(./../images/cion.png) no-repeat -320px -856px;}
 .guide:hover { -webkit-transform:translate(165px); -moz-transform:translate(165px); -ms-transform:translate(165px); transform:translate(165px);}
 .shade-nav { width: 190px;height: 100%;position: fixed;left: 0;z-index: 600;}
 
 
 
 
-.bg { width: 190px; height: 282px; background:url(../images/nav_bg.png) no-repeat; position: fixed; z-index: 11; bottom: 0px; left: 0px; opacity: 0.5; }
-.header { width: 100%; height: 72px; line-height: 72px; position: fixed; top: 0; background: url(../images/header_bg.png)#073872 no-repeat ; background-position:top center; background-size:cover; z-index: 10; }
+.bg { width: 190px; height: 282px; background:url(./../images/nav_bg.png) no-repeat; position: fixed; z-index: 11; bottom: 0px; left: 0px; opacity: 0.5; }
+.header { width: 100%; height: 72px; line-height: 72px; position: fixed; top: 0; background: url(./../images/header_bg.png)#073872 no-repeat ; background-position:top center; background-size:cover; z-index: 10; }
 .header .logo { width: 190px; height: 72px; float: left; text-align: center;}
-.cion-logo { width: 190px; height: 72px; background:url(../images/bg.png) no-repeat 11px -495px;}
+.cion-logo { width: 190px; height: 72px; background:url(./../images/bg.png) no-repeat 11px -495px;}
 .header .systemtime { float: left; margin-left: 20px; line-height: 22px; font-size: 1em; color: #ffffff; padding-top: 24px;}
 .header .systemtime p { float:right; margin-left:20px;}
 .header .userinfor { min-width: 190px; height: 28px; padding: 5px; line-height: 38px; float: right; margin:18px 13px 0px 0px; border-radius: 20px; background: #C1D3F4; }
 .header .userinfor .exitbox { width: 35px; height: 28px; float: right; border-left: 1px #899cc7 dashed; text-align: right;}
-.header .userinfor .cion_exit { width: 28px; height: 28px; border:0px;  border-radius: 28px; background: url(../images/cion.png) no-repeat 6px -961px #2c4e74; outline: none; cursor: pointer;}
+.header .userinfor .cion_exit { width: 28px; height: 28px; border:0px;  border-radius: 28px; background: url(./../images/cion.png) no-repeat 6px -961px #2c4e74; outline: none; cursor: pointer;}
 .header .userinfor .user_name { position: relative; height: 28px; line-height: 28px; float: right; color: #486eb4; font-size: 1em; padding-right: 30px;  }
-.cion-user-name { position: absolute; right: 0px; width: 28px; height: 28px;  background: url(../images/cion.png) no-repeat 4px -411px;}
+.cion-user-name { position: absolute; right: 0px; width: 28px; height: 28px;  background: url(./../images/cion.png) no-repeat 4px -411px;}
 
 
 .MainBox { background: #2c4c72;}
@@ -147,25 +147,25 @@ small { font-size: 12px; color: #3e4b62; margin-left: 5px;}
 .Nav h3 img { margin-right: 5px;}
 .Nav i  ,.Nav em{ position: absolute; width: 28px; height: 28px; left: 38px; top: 8px;}
 .Nav em{display:none;}
-.Nav i.cion-system {  background: url(../images/cion.png) no-repeat -320px -510px;}
-.Nav i.cion-event {  background: url(../images/cion.png) no-repeat -320px -460px; }
-.Nav i.cion-log {  background: url(../images/cion.png) no-repeat -320px -560px;}
-.Nav i.cion-rule {  background: url(../images/cion.png) no-repeat -320px -610px;}
-.Nav i.cion-audit {  background: url(../images/cion.png) no-repeat -320px -760px;}
-.Nav i.cion-nettopo {  background: url(../images/cion.png) no-repeat -320px -810px;}
-.Nav i.cion-device {  background: url(../images/cion.png) no-repeat -320px -660px;}
-.Nav i.cion-user {  background: url(../images/cion.png) no-repeat -320px -710px;}
-.Nav i.cion-management {  background: url(../images/cion.png) no-repeat -320px -310px;}
-.Nav .on  i.cion-system{  background: url(../images/cion.png) no-repeat -485px -510px!important;}
-.Nav .on  i.cion-event{  background: url(../images/cion.png) no-repeat -485px -460px!important; }
-.Nav .on  i.cion-log {  background: url(../images/cion.png) no-repeat -485px -560px!important;}
-.Nav .on  i.cion-rule {  background: url(../images/cion.png) no-repeat -485px -610px!important;}
-.Nav .on  i.cion-audit {  background: url(../images/cion.png) no-repeat -485px -760px!important;}
-.Nav .on  i.cion-nettopo{  background: url(../images/cion.png) no-repeat -485px -810px!important;}
-.Nav .on  i.cion-device {  background: url(../images/cion.png) no-repeat -485px -660px!important;}
-.Nav .on  i.cion-user {  background: url(../images/cion.png) no-repeat -485px -710px!important;}
-.Nav .on  i.cion-management {  background: url(../images/cion.png) no-repeat -485px -310px!important;}
-.Nav h3 .up { width: 9px; height: 7px; position: absolute; right: 20px; top: 20px; background: url(../images/cion.png) no-repeat -153px -924px; z-index: 2; }
+.Nav i.cion-system {  background: url(./../images/cion.png) no-repeat -320px -510px;}
+.Nav i.cion-event {  background: url(./../images/cion.png) no-repeat -320px -460px; }
+.Nav i.cion-log {  background: url(./../images/cion.png) no-repeat -320px -560px;}
+.Nav i.cion-rule {  background: url(./../images/cion.png) no-repeat -320px -610px;}
+.Nav i.cion-audit {  background: url(./../images/cion.png) no-repeat -320px -760px;}
+.Nav i.cion-nettopo {  background: url(./../images/cion.png) no-repeat -320px -810px;}
+.Nav i.cion-device {  background: url(./../images/cion.png) no-repeat -320px -660px;}
+.Nav i.cion-user {  background: url(./../images/cion.png) no-repeat -320px -710px;}
+.Nav i.cion-management {  background: url(./../images/cion.png) no-repeat -320px -310px;}
+.Nav .on  i.cion-system{  background: url(./../images/cion.png) no-repeat -485px -510px!important;}
+.Nav .on  i.cion-event{  background: url(./../images/cion.png) no-repeat -485px -460px!important; }
+.Nav .on  i.cion-log {  background: url(./../images/cion.png) no-repeat -485px -560px!important;}
+.Nav .on  i.cion-rule {  background: url(./../images/cion.png) no-repeat -485px -610px!important;}
+.Nav .on  i.cion-audit {  background: url(./../images/cion.png) no-repeat -485px -760px!important;}
+.Nav .on  i.cion-nettopo{  background: url(./../images/cion.png) no-repeat -485px -810px!important;}
+.Nav .on  i.cion-device {  background: url(./../images/cion.png) no-repeat -485px -660px!important;}
+.Nav .on  i.cion-user {  background: url(./../images/cion.png) no-repeat -485px -710px!important;}
+.Nav .on  i.cion-management {  background: url(./../images/cion.png) no-repeat -485px -310px!important;}
+.Nav h3 .up { width: 9px; height: 7px; position: absolute; right: 20px; top: 20px; background: url(./../images/cion.png) no-repeat -153px -924px; z-index: 2; }
 .Nav ul .firstnav.on .secondnav{ display: block;}
 .Nav ul .firstnav.on .up { transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); -moz-transform: rotate(180deg);}
 .Nav ul .firstnav .secondnav{ background: #1e3957; color:#ffffff; display:none; }
@@ -190,15 +190,15 @@ small { font-size: 12px; color: #3e4b62; margin-left: 5px;}
 .main_content .chartlist .event-box .title { position: relative; line-height: 48px; padding-left: 42px; text-align: left; font-size: 1.2em; color:#ffffff; vertical-align: middle;}
 .main_content .chartlist .event-box .title img { margin-right: 10px; vertical-align: middle;}
 .main_content .title i { position: absolute; width: 28px; height: 28px; left: 10px; top: 13px;}
-.main_content .title i.cion-event01 { background: url(../images/cion.png) no-repeat -320px -162px;}
-.main_content .title i.cion-event02 { background: url(../images/cion.png) no-repeat -320px -212px;}
-.main_content .title i.cion-event03 { background: url(../images/cion.png) no-repeat -320px -263px;}
-.main_content .title i.cion-event04 { background: url(../images/cion.png) no-repeat -320px -314px;}
-.main_content .title i.cion-event05 { background: url(../images/cion.png) no-repeat -320px -13px;}
-.main_content .title i.cion-event06 { background: url(../images/cion.png) no-repeat -320px -63px;}
-.main_content .title i.cion-event07 { background: url(../images/cion.png) no-repeat -320px -114px;}
+.main_content .title i.cion-event01 { background: url(./../images/cion.png) no-repeat -320px -162px;}
+.main_content .title i.cion-event02 { background: url(./../images/cion.png) no-repeat -320px -212px;}
+.main_content .title i.cion-event03 { background: url(./../images/cion.png) no-repeat -320px -263px;}
+.main_content .title i.cion-event04 { background: url(./../images/cion.png) no-repeat -320px -314px;}
+.main_content .title i.cion-event05 { background: url(./../images/cion.png) no-repeat -320px -13px;}
+.main_content .title i.cion-event06 { background: url(./../images/cion.png) no-repeat -320px -63px;}
+.main_content .title i.cion-event07 { background: url(./../images/cion.png) no-repeat -320px -114px;}
 .main_content .chartlist .data { height: 60px; line-height: 60px; text-align: right; padding-right: 35px; font-size: 3em; font-weight: 900; color: #ffffff;}
-.main_content .chartlist .socket { float: left; position: relative; height: 120px; background: url(../images/socket-portbox-bg.png)!important; background-size:cover; text-align: center;}
+.main_content .chartlist .socket { float: left; position: relative; height: 120px; background: url(./../images/socket-portbox-bg.png)!important; background-size:cover; text-align: center;}
 .main_content .chartlist .socket .portbox { float: left; width: 82px;padding: 16px 0px;font-size: 0.85em;color: #ffffff;}
 .main_content .chartlist .socket .portbox li { line-height: 22px; text-align: right;}
 .main_content .chartlist .socket .portbox li img { margin-left: 5px;}
@@ -231,10 +231,10 @@ small { font-size: 12px; color: #3e4b62; margin-left: 5px;}
 .eventinfo_box .evboxlist { width: 100%; height: 130px; /*display: flex; flex-flow:row nowrap;*/ margin-bottom: 10px; }
 .eventinfo_box .evboxlist .evbox { /*flex:1;*/ float: left; width: 24%; height: 120px; background: #ffffff; text-align: center; box-shadow: 1px 1px 1px #BDBDBD; margin:0.5%;}
 .eventinfo_box .evboxlist .evbox .evbox_logo { width: 77px; height: 120px; float: left; }
-.eventinfo_box .evboxlist .evbox .evtoday { background: url(../images/cion.png) no-repeat -743px -680px #ff8761;}
-.eventinfo_box .evboxlist .evbox .evnoready { background: url(../images/cion.png) no-repeat -744px -799px #57bdde;}
-.eventinfo_box .evboxlist .evbox .evpeaktime { background: url(../images/cion.png) no-repeat -736px -442px #b198dc;}
-.eventinfo_box .evboxlist .evbox .evsafe { background: url(../images/cion.png) no-repeat -744px -561px #6dc7be;}
+.eventinfo_box .evboxlist .evbox .evtoday { background: url(./../images/cion.png) no-repeat -743px -680px #ff8761;}
+.eventinfo_box .evboxlist .evbox .evnoready { background: url(./../images/cion.png) no-repeat -744px -799px #57bdde;}
+.eventinfo_box .evboxlist .evbox .evpeaktime { background: url(./../images/cion.png) no-repeat -736px -442px #b198dc;}
+.eventinfo_box .evboxlist .evbox .evsafe { background: url(./../images/cion.png) no-repeat -744px -561px #6dc7be;}
 .eventinfo_box .evboxlist .evbox .evtitle { font-size: 1.2em; color: #6f7b91; line-height: 64px;}
 .eventinfo_box .evboxlist .evbox .evnumber { font-size: 2.3em; color: #626f87; font-weight: 700;}
 .eventinfo_box .evboxlist .evbox .evnumber_font { font-size: 1.9em; }
@@ -253,18 +253,18 @@ small { font-size: 12px; color: #3e4b62; margin-left: 5px;}
 .inputip {height: 34px; line-height: 34px; padding: 0px 10px; margin-left: 5px; border-radius: 3px; background: #f6f9fb; border:1px #d4dee5 solid; margin-right: 30px;}
 .selctip { width: 201px; height: 34px; line-height: 34px; padding: 0px 10px; margin-left: 5px; border-radius: 3px; background: #f6f9fb; border:1px #d4dee5 solid; margin-right: 30px;}
 .but { float: right; width: 100px; height: 36px; line-he1ight: 36px; padding-left: 15px; border-radius: 3px;  border:0; cursor: pointer; color: #ffffff; font-family: "Microsoft YaHei"; }
-.butip { background: url(../images/cion.png) no-repeat 4px -658px #678aee;  }
-.butip:hover { background: url(../images/cion.png) no-repeat 4px -658px #5977ce;}
-.butipon { background: url(../images/cion.png) no-repeat 4px -658px #2c52c1; /*box-shadow: 0px 3px 7px #374777 inset;*/}
-.butser { float: right; margin-right: 10px; background: url(../images/cion.png) no-repeat 7px -807px #678be9;}
-.butser:hover { background: url(../images/cion.png) no-repeat 7px -807px #5977ce;}
-.butser:active { background: url(../images/cion.png) no-repeat 7px -807px #2c52c1;}
+.butip { background: url(./../images/cion.png) no-repeat 4px -658px #678aee;  }
+.butip:hover { background: url(./../images/cion.png) no-repeat 4px -658px #5977ce;}
+.butipon { background: url(./../images/cion.png) no-repeat 4px -658px #2c52c1; /*box-shadow: 0px 3px 7px #374777 inset;*/}
+.butser { float: right; margin-right: 10px; background: url(./../images/cion.png) no-repeat 7px -807px #678be9;}
+.butser:hover { background: url(./../images/cion.png) no-repeat 7px -807px #5977ce;}
+.butser:active { background: url(./../images/cion.png) no-repeat 7px -807px #2c52c1;}
 .searchtxt { float: right; width: 180px; height: 34px; line-height: 34px; padding: 0px 10px; border-radius: 3px; background: #f6f9fb; border:1px #d4dee5 solid; margin-right: 10px;}
 .butchange { height: 34px; line-height: 34px; color: #4667c4; font-size: 0.9em; margin-right: 10px; border:0; border-radius: 3px; cursor: pointer;}
-.refresh { padding: 0px 10px 0px 32px; background: url(../images/cion.png) no-repeat -141px -209px #e1e7ff;}
-.yread { padding: 0px 10px 0px 27px; background: url(../images/cion.png) no-repeat -144px -109px #e1e7ff; }
-.empty { padding: 0px 10px 0px 27px; background: url(../images/cion.png) no-repeat -144px -59px #e1e7ff; }
-.export { padding: 0px 10px 0px 27px; background: url(../images/cion.png) no-repeat -143px -159px #e1e7ff; }
+.refresh { padding: 0px 10px 0px 32px; background: url(./../images/cion.png) no-repeat -141px -209px #e1e7ff;}
+.yread { padding: 0px 10px 0px 27px; background: url(./../images/cion.png) no-repeat -144px -109px #e1e7ff; }
+.empty { padding: 0px 10px 0px 27px; background: url(./../images/cion.png) no-repeat -144px -59px #e1e7ff; }
+.export { padding: 0px 10px 0px 27px; background: url(./../images/cion.png) no-repeat -143px -159px #e1e7ff; }
 table { border:1px #d4d4d4 solid; width: 100%; font-size: 0.85em; color: #3e4b62;}
 table tr { border:1px #d4d4d4 solid;} 
 table tr td { height: 38px; line-height: 38px; text-align: center;}
@@ -291,7 +291,7 @@ table tr.wtitle { background: #d3defb; color: #000000; font-size: 1.2em;}
 .czm { width: 30%; border-right:1px #c8d4dd solid;}
 
 
-.details { width: 60px; height: 26px; line-height: 26px; padding-left: 16px; border-radius: 3px; cursor: pointer; border:1px #c8d4dd solid; background: url(../images/cion.png) no-repeat -147px -264px #ffffff;color: #4667c4;}
+.details { width: 60px; height: 26px; line-height: 26px; padding-left: 16px; border-radius: 3px; cursor: pointer; border:1px #c8d4dd solid; background: url(./../images/cion.png) no-repeat -147px -264px #ffffff;color: #4667c4;}
 .allevent { position: absolute; bottom: -41px; right: 0;}
 .alleventleft { width: 100%; line-height: 30px; font-size: 1em; text-align: left; color: #6f7889;}
 .allevent_roll { position: absolute; bottom: -41px; right: 140px;}
@@ -299,9 +299,9 @@ table tr.wtitle { background: #d3defb; color: #000000; font-size: 1.2em;}
 .ipformat { line-height: 26px; font-size: 0.8em; padding-left: 78px; color: #678AEE;}
 
 .nettopo_box { width:100%; height:100%; position:relative; }
-.nettopo_box .net_left { background: url(../images/img/bg.png) repeat;}
+.nettopo_box .net_left { background: url(./../images/img/bg.png) repeat;}
 .nettopo_box .netdiv { position:absolute; top:-6px; right:-5px; }
-.nettopo_box .net_button { width:5px; height:690px; float:left; background:url(../images/nettopo_but.png) no-repeat center #a8b7ca; cursor:pointer;}
+.nettopo_box .net_button { width:5px; height:690px; float:left; background:url(./../images/nettopo_but.png) no-repeat center #a8b7ca; cursor:pointer;}
 .nettopo_box .net_dic { width:300px; min-height:690px; background:#f4f4f4; }
 .net_title { height: 30px; line-height: 30px; font-size: 1em; text-align: center; color: #4667c4; background: #d0dbeb; }
 .netlabel { display:block; line-height: 30px;}
@@ -347,7 +347,7 @@ table tr.wtitle { background: #d3defb; color: #000000; font-size: 1.2em;}
 .enevt_details .popup_txt .agreementtitle { float: left;}
 .enevt_details .popup_txt .agreement { float: left; max-height: 50px; line-height: 24px; overflow: auto; word-break: break-all;}
 .enevt_details .popup_txt .divoverflow { width: 100%; min-height: 30px;}
-.enevt_details .popup_title .popup_close { width: 12px; height: 12px; float: right; margin: 20px 20px 0 0; cursor: pointer; background: url(../images/cion_close.png) no-repeat;}
+.enevt_details .popup_title .popup_close { width: 12px; height: 12px; float: right; margin: 20px 20px 0 0; cursor: pointer; background: url(./../images/cion_close.png) no-repeat;}
 
 /*device*/
 .device_box { background: #ffffff; color: #3e4b62;}
@@ -359,15 +359,15 @@ table tr.wtitle { background: #d3defb; color: #000000; font-size: 1.2em;}
 .dediv { min-height: 40px; line-height: 40px; margin-top: 10px; position: relative;}
 .dediv label { display: inline-block; color: #3e4b62; font-size: 1em; margin-right: 10px;}
 .inputde {  height: 34px; line-height: 34px; padding: 0px 10px; border-radius: 3px; background: #f6f9fb; border:1px #d4dee5 solid; margin-right: 30px;}
-.buttonde { width: 100px; height: 36px; line-height: 36px; padding-left: 15px; border-radius: 3px;  border:0; cursor: pointer; color: #ffffff; font-family: "Microsoft YaHei"; background: url(../images/cion.png) no-repeat 10px -458px #678aee;}
-.buttonde:hover { background: url(../images/cion.png) no-repeat 10px -458px #5977ce;}
-.buttonde:active { background: url(../images/cion.png) no-repeat 10px -458px #2c52c1;}
+.buttonde { width: 100px; height: 36px; line-height: 36px; padding-left: 15px; border-radius: 3px;  border:0; cursor: pointer; color: #ffffff; font-family: "Microsoft YaHei"; background: url(./../images/cion.png) no-repeat 10px -458px #678aee;}
+.buttonde:hover { background: url(./../images/cion.png) no-repeat 10px -458px #5977ce;}
+.buttonde:active { background: url(./../images/cion.png) no-repeat 10px -458px #2c52c1;}
 .inputmin { width: 43px; height: 24px; line-height: 24px; text-align: center; border:1px #d4dee5 solid; margin-right: 5px;}
 .strength{ width: 43px; height: 24px; line-height: 24px; border:1px #d4dee5 solid;}
 .buttonsys { height: 36px; line-height: 36px; padding: 0px 10px 0px 36px; border-radius: 3px; margin-right: 10px; cursor: pointer; border:0; color: #4667c4;  font-family: "Microsoft YaHei";}
-.restart { background: url(../images/cion.png) no-repeat 7px -309px #e1e7ff;}
-.closede { background: url(../images/cion.png) no-repeat 7px -159px #e1e7ff;}
-.reduction { background: url(../images/cion.png) no-repeat 7px -209px #e1e7ff;}
+.restart { background: url(./../images/cion.png) no-repeat 7px -309px #e1e7ff;}
+.closede { background: url(./../images/cion.png) no-repeat 7px -159px #e1e7ff;}
+.reduction { background: url(./../images/cion.png) no-repeat 7px -209px #e1e7ff;}
 .dxinput { display: none;}
 .dxinput + label {-webkit-appearance: none;background-color: #f6f9fb;border: 1px solid #d6dfe6;padding: 8px;border-radius: 50px;display: inline-block;position: relative;margin: 0px 6px 0px 10px;vertical-align: middle; cursor: pointer;}
 .dxinput:checked + label:after {content: ' ';width: 8px;height: 8px;border-radius: 50px;position: absolute;top: 4px;background: #14bbf0;left: 4px;font-size: 32px;}
@@ -376,7 +376,7 @@ table tr.wtitle { background: #d3defb; color: #000000; font-size: 1.2em;}
 .timeinput + label {-webkit-appearance: none;background-color: #f6f9fb;border: 1px solid #d6dfe6;padding: 8px;border-radius: 50px;display: inline-block;position: relative;margin: 0px 6px 0px 10px;vertical-align: middle; cursor: pointer;}
 .timeinput:checked + label:after {content: ' ';width: 8px;height: 8px;border-radius: 50px;position: absolute;top: 4px;background: #14bbf0;left: 4px;font-size: 32px;}
 .timeinput:checked + label {background-color: #f6f9fb;color: #99a1a7;border: 1px solid #d6dfe6;}
-.de_sure { width: 100px; height: 36px; line-height: 36px; padding-left: 15px; border-radius: 3px; margin-left: 25px;  border:0; cursor: pointer; color: #ffffff; font-family: "Microsoft YaHei"; background: url(../images/cion.png) no-repeat -141px -209px #678aee;}
+.de_sure { width: 100px; height: 36px; line-height: 36px; padding-left: 15px; border-radius: 3px; margin-left: 25px;  border:0; cursor: pointer; color: #ffffff; font-family: "Microsoft YaHei"; background: url(./../images/cion.png) no-repeat -141px -209px #678aee;}
 .systime { float: right; font-size: 0.8em; color: #000000;}
 .s_time { height: 40px; position: relative; width: 260px; background: #e0e9f6; padding: 0px 10px;}
 .s_progress { width: 250px; position: absolute; top: -7px;}
@@ -391,10 +391,10 @@ table tr.wtitle { background: #d3defb; color: #000000; font-size: 1.2em;}
 .study_div .editdiv { flex:1;}
 .studytitle { line-height: 24px; color: #263248; font-size: 1.1em;}
 .studytable { height:430px; /*border:1px #d4d4d4 solid;*/ }
-.rule_bg { background: url(../images/rule_bg.png) no-repeat #f2f5fb center;}
-.edit_bg { background: url(../images/edit_bg.png) no-repeat #f2f5fb center;}
+.rule_bg { background: url(./../images/rule_bg.png) no-repeat #f2f5fb center;}
+.edit_bg { background: url(./../images/edit_bg.png) no-repeat #f2f5fb center;}
 .progress_bar { position: relative; width: 280px; height: 34px; background: #14bbf0; border:1px #168caa solid; border-radius: 2px; margin-left: 18px; margin-top: 4px;}
-.progress_bar .bar { width: 80%; height: 34px; background: url(../images/bar_bg.png) no-repeat right; }
+.progress_bar .bar { width: 80%; height: 34px; background: url(./../images/bar_bg.png) no-repeat right; }
 .progress_bar .study_time { position: absolute; width: 280px; height: 34px; line-height: 34px; top: 0; left: 0; text-align: center; color: #ffffff; font-weight: bold; letter-spacing: 1px; text-shadow: 1px 1px 1px #276D34; }
 .study_state { line-height: 55px;}
 
@@ -416,48 +416,48 @@ table tr.wtitle { background: #d3defb; color: #000000; font-size: 1.2em;}
 
 /*button style*/
 .button_disable,.button_enabled,.button_omit{width: 60px; height: 26px; line-height: 26px; padding-left: 16px; border-radius: 3px; cursor: pointer; border:1px #c8d4dd solid; color: #4667c4;}
-.button_disable{background: url(../images/cion.png) no-repeat -147px -563px #ffffff;}
-.button_enabled{background: url(../images/cion.png) no-repeat -147px -463px #ffffff;}
-.button_omit{background: url(../images/cion.png) no-repeat -147px -13px #ffffff;}
+.button_disable{background: url(./../images/cion.png) no-repeat -147px -563px #ffffff;}
+.button_enabled{background: url(./../images/cion.png) no-repeat -147px -463px #ffffff;}
+.button_omit{background: url(./../images/cion.png) no-repeat -147px -13px #ffffff;}
 .button_blue { border:0; cursor: pointer; border-radius: 3px; height: 36px; line-height: 36px; color: #ffffff; font-family: "Microsoft YaHei"; font-size: 14px;}
 .button_blue:hover {background-color: #5977ce;}
 .button_small { width: 64px; height: 26px; line-height: 26px; padding-left: 20px; border:1px #c8d4dd solid; border-radius: 2px; cursor: pointer;}
-.button_delete { background: url(../images/cion.png) no-repeat -144px -63px #ffffff;  color: #878B94; width: 64px; height: 26px; line-height: 26px; padding-left: 20px; border:1px #c8d4dd solid;color: #4667c4;}
-.button_sure { background: url(../images/cion.png) no-repeat 7px -559px #678aee; margin-left: 10px; font-size: 1em;  color: #ffffff; width: 92px; height: 36px; line-height: 36px; padding-left: 20px; border:0;}
-.button_sure:hover { background: url(../images/cion.png) no-repeat 7px -559px #5977ce;}
-.button_sure:active { background: url(../images/cion.png) no-repeat 7px -559px #2c52c1;}
-.button_add { background: url(../images/cion.png) no-repeat 7px -709px #678aee; width: 100px; height: 36px; line-height: 36px; padding-left: 15px; border-radius: 3px; margin-left: 25px;  border:0; cursor: pointer; color: #ffffff; font-family: "Microsoft YaHei"; }
-.button_add:hover { background: url(../images/cion.png) no-repeat 7px -709px #5977ce;}
-.button_add:active { background: url(../images/cion.png) no-repeat 7px -709px #2c52c1;}
-.button_cut { background: url(../images/cion.png) no-repeat 7px -609px #678aee; padding: 0px 25px 0px 50px; }
-.button_cut:hover { background: url(../images/cion.png) no-repeat 7px -609px #5977ce;}
-.button_cut:active { background: url(../images/cion.png) no-repeat 7px -609px #2c52c1;}
-.de_sure { width: 100px; height: 36px; line-height: 36px; padding-left: 15px; border-radius: 3px; margin-left: 25px;  border:0; cursor: pointer; color: #ffffff; font-family: "Microsoft YaHei"; background: url(../images/cion.png) no-repeat -141px -209px #678aee;}
-.button_sz { background: url(../images/cion.png) no-repeat -141px -209px #e1e7ff; color: #627FCE; padding: 0px 10px 0px 35px;}
-.but_empty { padding: 0px 10px 0px 27px; background: url(../images/cion.png) no-repeat -143px -58px #e1e7ff; }
-.but_refresh { padding: 0px 10px 0px 27px; background: url(../images/cion.png) no-repeat -143px -209px #e1e7ff;}
-.but_browse { padding: 0px 10px 0px 32px; background: url(../images/cion.png) no-repeat -141px -409px #e1e7ff; }
-.but_start { padding: 0px 10px 0px 27px; background: url(../images/cion.png) no-repeat -143px -458px #e1e7ff; }
-.but_disable { padding: 0px 10px 0px 27px; background: url(../images/cion.png) no-repeat -143px -508px #e1e7ff; }
-.but_derule { padding: 0px 10px 0px 30px; background: url(../images/cion.png) no-repeat -142px -559px #e1e7ff; }
+.button_delete { background: url(./../images/cion.png) no-repeat -144px -63px #ffffff;  color: #878B94; width: 64px; height: 26px; line-height: 26px; padding-left: 20px; border:1px #c8d4dd solid;color: #4667c4;}
+.button_sure { background: url(./../images/cion.png) no-repeat 7px -559px #678aee; margin-left: 10px; font-size: 1em;  color: #ffffff; width: 92px; height: 36px; line-height: 36px; padding-left: 20px; border:0;}
+.button_sure:hover { background: url(./../images/cion.png) no-repeat 7px -559px #5977ce;}
+.button_sure:active { background: url(./../images/cion.png) no-repeat 7px -559px #2c52c1;}
+.button_add { background: url(./../images/cion.png) no-repeat 7px -709px #678aee; width: 100px; height: 36px; line-height: 36px; padding-left: 15px; border-radius: 3px; margin-left: 25px;  border:0; cursor: pointer; color: #ffffff; font-family: "Microsoft YaHei"; }
+.button_add:hover { background: url(./../images/cion.png) no-repeat 7px -709px #5977ce;}
+.button_add:active { background: url(./../images/cion.png) no-repeat 7px -709px #2c52c1;}
+.button_cut { background: url(./../images/cion.png) no-repeat 7px -609px #678aee; padding: 0px 25px 0px 50px; }
+.button_cut:hover { background: url(./../images/cion.png) no-repeat 7px -609px #5977ce;}
+.button_cut:active { background: url(./../images/cion.png) no-repeat 7px -609px #2c52c1;}
+.de_sure { width: 100px; height: 36px; line-height: 36px; padding-left: 15px; border-radius: 3px; margin-left: 25px;  border:0; cursor: pointer; color: #ffffff; font-family: "Microsoft YaHei"; background: url(./../images/cion.png) no-repeat -141px -209px #678aee;}
+.button_sz { background: url(./../images/cion.png) no-repeat -141px -209px #e1e7ff; color: #627FCE; padding: 0px 10px 0px 35px;}
+.but_empty { padding: 0px 10px 0px 27px; background: url(./../images/cion.png) no-repeat -143px -58px #e1e7ff; }
+.but_refresh { padding: 0px 10px 0px 27px; background: url(./../images/cion.png) no-repeat -143px -209px #e1e7ff;}
+.but_browse { padding: 0px 10px 0px 32px; background: url(./../images/cion.png) no-repeat -141px -409px #e1e7ff; }
+.but_start { padding: 0px 10px 0px 27px; background: url(./../images/cion.png) no-repeat -143px -458px #e1e7ff; }
+.but_disable { padding: 0px 10px 0px 27px; background: url(./../images/cion.png) no-repeat -143px -508px #e1e7ff; }
+.but_derule { padding: 0px 10px 0px 30px; background: url(./../images/cion.png) no-repeat -142px -559px #e1e7ff; }
 .roll_but { font-family: "Microsoft YaHei"; height: 34px; line-height: 34px; color: #4667c4; font-size: 0.9em; margin-right: 10px; border:0; border-radius: 3px; cursor: pointer;}
-.but_stopstudy { background: url(../images/cion.png) no-repeat 2px -510px #678aee; padding: 0px 10px 0px 30px;}
-.but_beginstudy { background:url(../images/cion.png) no-repeat 2px -759px #678aee; padding: 0px 10px 0px 30px;}
-.but_beginstudy:hover { background:url(../images/cion.png) no-repeat 2px -759px #5977ce;}
-.but_beginstudy:active { background:url(../images/cion.png) no-repeat 2px -759px #2c52c1;}
-.select_study { width: 86px; margin-left: 20px; height: 36px; line-height: 36px; background: url(../images/cion.png) no-repeat -141px -209px; border: 0; outline: none; padding: 0px 40px 0px 30px; color: #4667c4; font-size: 0.9em;  }
-.but_all { padding: 0px 10px 0px 27px; background: url(../images/cion.png) no-repeat -144px -108px #e1e7ff; }
-.but_off { padding: 0px 10px 0px 27px; background: url(../images/cion.png) no-repeat -144px -957px #e1e7ff; }
-.but_one { padding: 0px 10px 0px 35px; background: url(../images/cion.png) no-repeat -141px -309px #e1e7ff;}
-.but_upload { padding: 0px 10px 0px 35px; background: url(../images/cion.png) no-repeat -141px -358px #e1e7ff; }
-.button_addition { width: 60px; height: 92px; border:0; background: url(../images/cion.png) no-repeat -141px -209px; cursor: pointer; outline: none;}
-.delete { width: 16px; height: 16px; border: 0; outline: none; background: url(../images/cion.png) no-repeat -141px -209px; cursor: pointer;}
+.but_stopstudy { background: url(./../images/cion.png) no-repeat 2px -510px #678aee; padding: 0px 10px 0px 30px;}
+.but_beginstudy { background:url(./../images/cion.png) no-repeat 2px -759px #678aee; padding: 0px 10px 0px 30px;}
+.but_beginstudy:hover { background:url(./../images/cion.png) no-repeat 2px -759px #5977ce;}
+.but_beginstudy:active { background:url(./../images/cion.png) no-repeat 2px -759px #2c52c1;}
+.select_study { width: 86px; margin-left: 20px; height: 36px; line-height: 36px; background: url(./../images/cion.png) no-repeat -141px -209px; border: 0; outline: none; padding: 0px 40px 0px 30px; color: #4667c4; font-size: 0.9em;  }
+.but_all { padding: 0px 10px 0px 27px; background: url(./../images/cion.png) no-repeat -144px -108px #e1e7ff; }
+.but_off { padding: 0px 10px 0px 27px; background: url(./../images/cion.png) no-repeat -144px -957px #e1e7ff; }
+.but_one { padding: 0px 10px 0px 35px; background: url(./../images/cion.png) no-repeat -141px -309px #e1e7ff;}
+.but_upload { padding: 0px 10px 0px 35px; background: url(./../images/cion.png) no-repeat -141px -358px #e1e7ff; }
+.button_addition { width: 60px; height: 92px; border:0; background: url(./../images/cion.png) no-repeat -141px -209px; cursor: pointer; outline: none;}
+.delete { width: 16px; height: 16px; border: 0; outline: none; background: url(./../images/cion.png) no-repeat -141px -209px; cursor: pointer;}
 .selectip { width: 160px; height: 34px; line-height: 34px; padding-left: 5px; background:#f6f9fb; border-radius: 3px; border:1px #d4dee5 solid; color: #3e4b62; margin-right: 30px;}
-.button_confirm { background: url(../images/cion.png) no-repeat 5px -63px #ffffff; color: #878B94;}
-/* .button_edit { background: url(../images/cion.png) no-repeat 5px -12px #ffffff; color: #878B94;}
-.button_cancel { background: url(../images/cion.png) no-repeat 5px -113px #ffffff; color: #878B94;} */
-.button_edit { background: url(../images/cion.png) no-repeat 7px -6px #678aee;width: 100px;padding-left: 15px;margin-left: 25px;}
-.button_cancel { background: url(../images/cion.png) no-repeat 7px -859px #678aee;width: 100px; padding-left: 15px; margin-left: 25px;}
+.button_confirm { background: url(./../images/cion.png) no-repeat 5px -63px #ffffff; color: #878B94;}
+/* .button_edit { background: url(./../images/cion.png) no-repeat 5px -12px #ffffff; color: #878B94;}
+.button_cancel { background: url(./../images/cion.png) no-repeat 5px -113px #ffffff; color: #878B94;} */
+.button_edit { background: url(./../images/cion.png) no-repeat 7px -6px #678aee;width: 100px;padding-left: 15px;margin-left: 25px;}
+.button_cancel { background: url(./../images/cion.png) no-repeat 7px -859px #678aee;width: 100px; padding-left: 15px; margin-left: 25px;}
 .input_editodd { width: 180px; height: 26px; line-height: 26px; padding: 0px 10px; border-radius: 3px; background: #ffffff; border: 0; }
 .input_editeven { width: 180px; height: 26px; line-height: 26px; padding: 0px 10px; border-radius: 3px; background: #f6f9fb; border: 0; }
 .checkbox { display: none;}
@@ -465,7 +465,7 @@ table tr.wtitle { background: #d3defb; color: #000000; font-size: 1.2em;}
 .checkbox + label:after {content: '';font-size: 12px;position: absolute;top: -13px;left: 2px;color: #1C7DFA;}
 .checkbox:checked + label:after {content: '\2714';font-size: 12px;position: absolute;top: -14px;left: 1px;color: #4667C4;}
 .dic { display: inline-block; min-width: 200px; height: 34px; line-height: 34px; background: #E1E7FF; padding: 0px 5px;}
-.upgrade { background: url(../images/cion.png) no-repeat 7px -259px #e1e7ff;}
+.upgrade { background: url(./../images/cion.png) no-repeat 7px -259px #e1e7ff;}
 
 
 
@@ -475,31 +475,31 @@ table tr.wtitle { background: #d3defb; color: #000000; font-size: 1.2em;}
 .single-select .boxwrap{ display:inline-block; vertical-align:middle; }
 .single-select .select-tit{ position:relative; display:block;  padding: 0px 30px 0px 13px; min-width:40px; line-height:23px; height:26px; border:solid 1px #eee; text-decoration:none; background:#fff; white-space:nowrap; word-break:break-all; }
 .single-select .select-tit span{ display:inline-block; color:#333; font-size:12px; vertical-align:middle; margin-right: 10px; }
-.single-select .select-tit i{ position:absolute; right:0; top:0; display:block; width:28px; height:100%; border-left:1px solid #eee; background:url(../images/skin_icons.png) 7px -189px no-repeat #fafafa; }
+.single-select .select-tit i{ position:absolute; right:0; top:0; display:block; width:28px; height:100%; border-left:1px solid #eee; background:url(./../images/skin_icons.png) 7px -189px no-repeat #fafafa; }
 .single-select .select-items{ display:none; position:absolute; left:0; top:45px; /*overflow:hidden;*/ }
 .single-select .select-items ul{ position:relative; padding:5px; min-width:74px; max-height:280px; border:1px solid #eee; background:#fff; overflow-y:auto; overflow-x:hidden; }
 .single-select .select-items ul li{ display:block; padding:4px 10px; line-height:20px; font-size:12px; color:#666; white-space:nowrap; cursor:pointer; }
 .single-select .select-items ul li:hover{ color:#678AEE; text-decoration:none; }
 .single-select .select-items ul li.selected{ color:#fff; background:#678AEE; }
-.single-select .arrow{ display:none; position:absolute; left:15px; top:35px; width:21px; height:11px; text-indent:-9999px; background:url(../images/skin_icons.png) 0 -290px no-repeat; }
+.single-select .arrow{ display:none; position:absolute; left:15px; top:35px; width:21px; height:11px; text-indent:-9999px; background:url(./../images/skin_icons.png) 0 -290px no-repeat; }
 .single-select.up .select-items{ top:auto; bottom:45px; }
-.single-select.up .arrow{ top:-13px; background:url(../images/skin_icons.png) 0 -300px no-repeat; }
+.single-select.up .arrow{ top:-13px; background:url(./../images/skin_icons.png) 0 -300px no-repeat; }
 
 
 /*study-select*/
 .study-select { position:relative; display:inline-block; margin-right:5px; vertical-align:middle; cursor:pointer; *float:left; }
-.study-select .boxwrap{ display: inline-block;vertical-align: middle; width: 158px; height: 36px; background: url(../images/select_study.png) no-repeat; }
+.study-select .boxwrap{ display: inline-block;vertical-align: middle; width: 158px; height: 36px; background: url(./../images/select_study.png) no-repeat; }
 .study-select .select-tit{ position: relative; display: block; text-align: center; margin: 5px 37px 0px 6px;min-width: 40px;line-height: 23px; height: 26px;text-decoration: none; background: #ffffff;white-space: nowrap;word-break: break-all;color: #4667c4; }
 .study-select .select-tit span{ display:inline-block; color:#333; font-size:12px; vertical-align:middle; }
-.study-select .select-tit i{ position:absolute; right:0; top:0; display:block; width:28px; height:100%; border-left:1px solid #eee; background:url(../images/skin_icons.png) 7px -189px no-repeat #fafafa; }
+.study-select .select-tit i{ position:absolute; right:0; top:0; display:block; width:28px; height:100%; border-left:1px solid #eee; background:url(./../images/skin_icons.png) 7px -189px no-repeat #fafafa; }
 .study-select .select-items{ display:none; position:absolute; left:0; top:45px; /*overflow:hidden;*/ }
 .study-select .select-items ul{ position:relative; padding:5px; min-width:145px; max-height:280px; border:1px solid #7d8bb0; background:#fff; overflow-y:auto; overflow-x:hidden; }
 .study-select .select-items ul li{ display:block; text-align: center; margin: 3px 0px; line-height:38px; border-radius: 2px; font-size:1em; color:#2851c7; white-space:nowrap; cursor:pointer; background: #f2f2f2; }
 .study-select .select-items ul li:hover{ text-decoration:none; }
 .study-select .select-items ul li.selected{ border:1px #678aee solid; }
-.study-select .arrow{ display:none; position:absolute; left:66px; top:43px; width:21px; height:11px; text-indent:-9999px; background:url(../images/skin_icons.png) 0 -290px no-repeat; }
+.study-select .arrow{ display:none; position:absolute; left:66px; top:43px; width:21px; height:11px; text-indent:-9999px; background:url(./../images/skin_icons.png) 0 -290px no-repeat; }
 .study-select.up .select-items{ top:auto; bottom:53px; }
-.study-select.up .arrow{ top:-13px; background:url(../images/skin_icons.png) 0 -300px no-repeat; }
+.study-select.up .arrow{ top:-13px; background:url(./../images/skin_icons.png) 0 -300px no-repeat; }
 
 
 /*滚动条样式*/
@@ -535,8 +535,8 @@ table tr.wtitle { background: #d3defb; color: #000000; font-size: 1.2em;}
 
 /*guide.css*/
 .guide-bg { width: 100%; height: 100%; /*background: rgba(0,0,0,0.5);*/ position: fixed; z-index: 1000;}
-.promptbox { position: absolute; z-index: 1000; width: 519px; height: 210px; padding:60px 25px 25px; border:1px #7490d2 solid; border-radius: 3px; background: url(../images/promptbox_bg.png) no-repeat top #e7ecf3; box-shadow: 0px 1px 4px #7481A0; -webkit-box-shadow: 0px 1px 4px #7481A0; }
-.prompt-text {height: 72%; padding: 30px 20px; line-height: 32px; background: url(../images/guide_bg.png) no-repeat right bottom #ffffff; font-size: 18px; font-weight: bold;}
+.promptbox { position: absolute; z-index: 1000; width: 519px; height: 210px; padding:60px 25px 25px; border:1px #7490d2 solid; border-radius: 3px; background: url(./../images/promptbox_bg.png) no-repeat top #e7ecf3; box-shadow: 0px 1px 4px #7481A0; -webkit-box-shadow: 0px 1px 4px #7481A0; }
+.prompt-text {height: 72%; padding: 30px 20px; line-height: 32px; background: url(./../images/guide_bg.png) no-repeat right bottom #ffffff; font-size: 18px; font-weight: bold;}
 .prompt-text p { margin-bottom: 12px;}
 .font-blue { color: #5885d9;}
 .font-black { color: #3f3f3f;}
@@ -547,8 +547,8 @@ table tr.wtitle { background: #d3defb; color: #000000; font-size: 1.2em;}
 .btn-g-style {  width: 100px; height: 40px; line-height: 40px; cursor: pointer; text-align: center; border:0; font-family: "Microsoft YaHei"; border-radius: 3px; font-size: .8em; font-weight: bold; color:#fff;}
 .btn-g-again { float: left; margin-left: 75px; background: #5d73d5;}
 .btn-g-close { float: left; margin-left: 90px; background: #41aacd;}
-.arrowsbox { width: 90px; height: 80px; position: absolute; z-index: 1000; background: url(../images/arrows.gif) no-repeat;cursor:pointer; }
-.arrowsbox .arrows-guide { position: absolute; right: 0; width: 60px; height: 50px; background: url(../images/cion.png) no-repeat -741px -315px; animation:arrows 1.5s linear infinite; -webkit-animation:arrows 1.5s linear infinite; -ms-animation:arrows 1.5s linear infinite; -moz-animation:arrows 1.5s linear infinite; }
+.arrowsbox { width: 90px; height: 80px; position: absolute; z-index: 1000; background: url(./../images/arrows.gif) no-repeat;cursor:pointer; }
+.arrowsbox .arrows-guide { position: absolute; right: 0; width: 60px; height: 50px; background: url(./../images/cion.png) no-repeat -741px -315px; animation:arrows 1.5s linear infinite; -webkit-animation:arrows 1.5s linear infinite; -ms-animation:arrows 1.5s linear infinite; -moz-animation:arrows 1.5s linear infinite; }
 .arrowsbox .on-guide { position: absolute; top: 0; left: 0; width: 40px; height: 40px; animation:arrowson 1.5s  infinite; -webkit-animation:arrowson 1.5s infinite; -ms-animation:arrowson 1.5s infinite; -moz-animation:arrowson 1.5s infinite; }
 .arrowsbox .on-guide:hover { cursor: pointer;}
 .highlight { padding:10px;}
@@ -579,7 +579,7 @@ table tr.wtitle { background: #d3defb; color: #000000; font-size: 1.2em;}
 
 /*interface.css*/
 .interface_box{background:#fff;padding:20px;margin:5px}
-.main_content .interface_box .socket{position:relative;text-transform:uppercase;background:url(../images/con_ka2.jpg) #709bd3 no-repeat;height:235px;background-size:100% 100%}
+.main_content .interface_box .socket{position:relative;text-transform:uppercase;background:url(./../images/con_ka2.jpg) #709bd3 no-repeat;height:235px;background-size:100% 100%}
 .main_content .interface_box .socket .portbox{float:left;min-width:110px;padding:20px 0;font-size:14px;color:#fff;margin-left:52px}
 .main_content .interface_box .socket .portbox li{line-height:22px;margin:22px auto}
 .main_content .interface_box .socket .portbox li img{margin-right:20px;width:24px;margin-left:5px}
@@ -591,7 +591,7 @@ table tr.wtitle { background: #d3defb; color: #000000; font-size: 1.2em;}
 .interface_box .portlist_box .portgl:first-child{margin-left:0}
 .clearfl{clear:both}
 .interface_box .portlist_box .portgl p{padding:0 10px;color:#3e4b62;font-size:.8em}
-.interface_box .portlist_box .portgl h3{background:url(../images/con_ka3.jpg);font-size:14px;line-height:33px;padding-left:10px;font-weight:400;margin-bottom:10px}
+.interface_box .portlist_box .portgl h3{background:url(./../images/con_ka3.jpg);font-size:14px;line-height:33px;padding-left:10px;font-weight:400;margin-bottom:10px}
 .dkip,.dkzt{text-indent:2em}
 .dkzt img{margin-right:4px}
 .interface_box .portlist_box .portgl .ym{margin:5px 0}
